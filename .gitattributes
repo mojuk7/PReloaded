@@ -1,11 +1,13 @@
-# for git-svn users
 # default line endings
 * text eol=lf
+
 # git
 .gitignore     text eol=lf
 .gitattributes text eol=lf
+
 # intellisense creator
 intellisense*.h text eol=lf
+
 # binary
 *.acm  binary
 *.ACM  binary
@@ -52,4 +54,4 @@ intellisense*.h text eol=lf
 *.xlsx binary
 *.XLSX binary
 *.zip filter=lfs diff=lfs merge=lfs -text
-*.ZIP  binary
+*.ZIP filter=lfs diff=lfs merge=lfs -text
