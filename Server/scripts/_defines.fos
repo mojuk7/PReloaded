@@ -67,9 +67,6 @@
 // NO DROP MODE FOR PLAYERS (ugly)
 #define PLAYER_NO_DROP 1
 
-// NEW SMART CURSOR
-#define SMART_CURSOR_CLASS
-
 // Custom say types (single target)
 // 42...254
 

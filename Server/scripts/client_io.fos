@@ -11,7 +11,6 @@
 #include "client_interface_h.fos"
 #include "config_file_h.fos"
 #include "client_utils_h.fos"
-#include "client_smart_cursor_h.fos"
 
 import bool IsGMTEnabled() from "client_main";
 
@@ -214,14 +213,8 @@ bool mouse_down(int click)
         return true;
     if(HexThrowingMouseDown(click))
         return true;
-#ifndef SMART_CURSOR_CLASS
-    if(TryUseSmartCursor(click))
-		return true;
-#endif
-#ifdef SMART_CURSOR_CLASS
-	if( SmartCursorClick( click ))
+    if( SmartCursorClick( click ))
         return true;
-#endif
 
     IndicatorMouse(true, click);
 

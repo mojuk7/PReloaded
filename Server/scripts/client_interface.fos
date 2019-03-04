@@ -24,8 +24,6 @@
 #include "polygon_towns.fos"
 #include "prod_ingredients_h.fos"
 
-#include "client_smart_cursor_h.fos"
-
 /*
    GMT MARK : add
    #include "client_gmtools_h.fos"
@@ -503,12 +501,7 @@ void render_iface(uint layer)
 				DrawIndicators();
 			RenderThrowing();
 
-#ifndef SMART_CURSOR_CLASS
-			TryDrawSmartCursor();
-#endif
-#ifdef SMART_CURSOR_CLASS
 			SmartCursorDraw( layer );
-#endif
 		}
     }
 
