@@ -1,4 +1,4 @@
-﻿
+
 namespace FOCommon.Parsers
 {
     public interface IParser

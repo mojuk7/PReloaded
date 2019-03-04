@@ -1,4 +1,4 @@
-﻿namespace WorldEditor.NZone.EncounterGroup
+namespace WorldEditor.NZone.EncounterGroup
 {
     partial class frmSelectObject
     {

@@ -1,4 +1,4 @@
-﻿
+
 namespace WorldEditor.Worldmap.EncounterGroup
 {
     public class Filtering

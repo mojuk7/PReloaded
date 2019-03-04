@@ -1,4 +1,4 @@
-﻿namespace CritableEditor
+namespace CritableEditor
 {
     partial class MainForm
     {

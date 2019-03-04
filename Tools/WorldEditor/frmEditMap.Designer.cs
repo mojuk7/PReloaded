@@ -1,4 +1,4 @@
-﻿namespace WorldEditor
+namespace WorldEditor
 {
     partial class frmEditMap
     {

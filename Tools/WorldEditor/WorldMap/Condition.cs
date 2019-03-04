@@ -1,4 +1,4 @@
-﻿
+
 namespace WorldEditor
 {
     public enum ConditionType

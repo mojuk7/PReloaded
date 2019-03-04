@@ -1,4 +1,4 @@
-﻿namespace ScriptHost.Forms
+namespace ScriptHost.Forms
 {
     partial class frmExtensionList
     {

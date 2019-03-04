@@ -1,4 +1,4 @@
-﻿namespace FOMonitor
+namespace FOMonitor
 {
     partial class frmWhitelist
     {

@@ -1,4 +1,4 @@
-﻿namespace ObjectEditor
+namespace ObjectEditor
 {
     partial class frmFilter
     {

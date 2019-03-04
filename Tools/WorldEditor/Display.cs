@@ -1,4 +1,4 @@
-﻿
+
 namespace WorldEditor
 {
     public static class Display

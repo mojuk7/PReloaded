@@ -1,4 +1,4 @@
-﻿namespace WorldEditor.ProtoEditor
+namespace WorldEditor.ProtoEditor
 {
     partial class frmProtoCritterRawEditor
     {

@@ -1,4 +1,4 @@
-﻿namespace FOCommon.Dialog
+namespace FOCommon.Dialog
 {
     public class Demand : Dynamic
     {

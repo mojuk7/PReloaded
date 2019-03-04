@@ -1,4 +1,4 @@
-﻿namespace FOCommon.Controls
+namespace FOCommon.Controls
 {
     partial class ColorComboBox
     {

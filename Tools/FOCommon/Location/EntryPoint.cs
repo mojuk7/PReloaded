@@ -1,4 +1,4 @@
-﻿namespace FOCommon.WMLocation
+namespace FOCommon.WMLocation
 {
     public class EntryPoint
     {

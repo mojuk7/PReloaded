@@ -1,4 +1,4 @@
-﻿namespace FOCommon.Critter
+namespace FOCommon.Critter
 {
     public class CritterProto : ISelectable
     {

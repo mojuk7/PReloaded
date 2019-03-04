@@ -1,4 +1,4 @@
-﻿#ifndef _ITEMPID_H_DEFINED
+#ifndef _ITEMPID_H_DEFINED
 #define _ITEMPID_H_DEFINED
 
 /******************************************************************

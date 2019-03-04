@@ -1,4 +1,4 @@
-﻿
+
 namespace WorldEditor.ProtoEditor
 {
     public static class Consts
