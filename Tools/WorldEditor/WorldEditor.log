@@ -1,0 +1,27 @@
+[2/20/2019 11:50:04 PM] Starting in D:\Dev\fonline\FOClassic Reloaded\Tools\WorldEditor
+[2/20/2019 11:50:04 PM] Loading config
+[2/20/2019 11:50:04 PM]    OS version: Microsoft Windows NT 6.2.9200.0 64-bit
+   .NET CLR version: 4.0.30319.42000
+   .NET installed versions:
+       2.0 (SP 2) - 2.0.50727.4927
+       3.0 (SP 2) - 3.0.30729.4926
+       3.5 (SP 1) - 3.5.30729.4926
+       4.0 Client Profile
+       4.0 Full Profile
+
+[2/20/2019 11:50:04 PM] Loading UI Settings
+[2/20/2019 11:50:04 PM] Loaded UI Settings
+[2/20/2019 11:50:04 PM] Starting script thread...
+[2/20/2019 11:50:04 PM] Loading resources sequentially...
+[2/20/2019 11:50:04 PM] Loading zones from ..\..\Server\maps\worldmap.fowm...
+[2/20/2019 11:50:04 PM] Loaded maps and location data.
+[2/20/2019 11:50:04 PM] Found 959 PIDs in ITEMPID.H
+[2/20/2019 11:50:04 PM] Loading param defines.
+[2/20/2019 11:50:04 PM] Loading graphics\worldmap.png
+[2/20/2019 11:50:04 PM] Loading ITEMPID.H
+[2/20/2019 11:50:04 PM] Loaded game data.
+[2/20/2019 11:50:04 PM] Clearing controls
+[2/20/2019 11:50:04 PM] Main form loaded.
+[2/20/2019 11:50:24 PM] Launching QuitPrompt()
+[2/20/2019 11:50:24 PM] Saving UI Settings
+[2/20/2019 11:50:24 PM] Saved UI Settings
