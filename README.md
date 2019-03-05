@@ -1,22 +1,24 @@
 # PReloaded - Reloaded Prototype
-**FOClassic server example based on FOnline Reloaded**\*
 
+**FOClassic server example based on FOnline Reloaded<sup>1</sup>**
 
-<br />FOClassic:
+#### FOClassic
 
-https://rotators.fodev.net/foclassic/
+https://rotators.fodev.net/foclassic/  
+https://github.com/rotators/foclassic/  
 
-https://github.com/rotators/foclassic
+#### FOnline Reloaded
 
+https://www.fonline-reloaded.net/  
 
-<br />FOnline Reloaded:
+#### Fallout of Nevada
+Content by Nevada Band Studio<sup>2</sup>
 
-https://www.fonline-reloaded.net/
+http://fallout-nevada.ucoz.ru/  
+  
+  
+---
 
+<sup>1</sup>Most content was removed but as much functionality as possible remainded to allow more complex tests.  
 
-<br />Fallout of Nevada content by Nevada Band Studio\*\*
-
-http://fallout-nevada.ucoz.ru/
-
-<br />\*Most content was removed but as much functionality as possible remainded to allow more complex tests.
-<br />\*\*Credits required if you want to use their content in your project.
+<sup>2</sup>Credits required if you want to use their content in your project.  
