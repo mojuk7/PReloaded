@@ -1,7 +1,7 @@
 /////
 //
 // FOClassic v7
-// Timestamp 07.02.2019
+// Timestamp 06.03.2019
 //
 /////
 //
@@ -316,7 +316,7 @@ struct GameOptions
     const uint           TurnBasedTick;
     const int            DeadHitPoints;
     const uint           Breaktime;
-    const uint           TimeoutTransfer;
+    foconst uint         TimeoutTransfer;
     const uint           TimeoutBattle;
     const uint           ApRegeneration;
     const uint           RtApCostCritterWalk;

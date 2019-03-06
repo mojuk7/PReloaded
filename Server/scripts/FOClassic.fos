@@ -1,7 +1,7 @@
 /////
 //
 // FOClassic v7
-// Timestamp 08.02.2019
+// Timestamp 06.03.2019
 //
 /////
 //
@@ -83,7 +83,7 @@
 # define STATIC_ASSERT_PRINTF( function, a )              function( "STATIC_ASSERT( sizeof(%s) == %u );\n", # a, sizeof(a) )
 
 # define memzero( ptr, size )                             memset( ptr, 0, size )
-# define MAKEUINT( ch0, ch1, ch2, ch3 )                   ( (uint)(uchar)(ch0) | ( (uint)(uchar)(ch1) << 8 ) | ( (uint)(uchar)(ch2) << 16 ) | ( (uint)(uchar)(ch3) << 24 ) )
+# define MAKEUINT( ch0, ch1, ch2, ch3 )                   ( (uint)(uint8)(ch0) | ( (uint)(uint8)(ch1) << 8 ) | ( (uint)(uint8)(ch2) << 16 ) | ( (uint)(uint8)(ch3) << 24 ) )
 # define OFFSETOF( type, member )                         ( (int)offsetof( type, member ) )
 # define PACKUINT64( u32hi, u32lo )                       ( ( (uint64)u32hi << 32 ) | ( (uint64)u32lo ) )
 
@@ -158,13 +158,10 @@
 
 // main sections, available at runtime
 
-#define SECTION_NONE                                      ""             // for settings which doesn't belong to any section
-#define SECTION_CLIENT                                    "Game Options" // main section
-#define SECTION_MAPPER                                    "Mapper"       // main section
-#define SECTION_SERVER                                    "Server"       // main section
-
-// merged sections, available at runtime
-#define SECTION_SERVER_DIALOGS                            "Dialogs"      // from dialogs.cfg
+#define SECTION_NONE                                      ""               // for settings which doesn't belong to any section
+#define SECTION_CLIENT                                    "Game Options"   // main section
+#define SECTION_MAPPER                                    "Mapper"         // main section
+#define SECTION_SERVER                                    "Server"         // main section
 
 // detail sections, available only when reading configuration from disk
 
@@ -172,6 +169,17 @@
 #define SECTION_CLIENT_GL                                 "ClientGL" // detail section
 #define SECTION_MAPPER_DX                                 "MapperDX" // detail section
 #define SECTION_MAPPER_GL                                 "MapperGL" // detail section
+
+// sections merged into ConfigFile, available at runtime
+
+#define SECTION_SERVER_DIALOGS                            "Dialogs"        // from dialogs.cfg, Server only
+#define SECTION_SERVER_SCRIPTS                            "Scripts"        // from scripts.cfg, Server only
+#define SECTION_CLIENT_SCRIPTS_MODULES                    "Client scripts" // from scripts.cfg, Server only
+#define SECTION_CLIENT_SCRIPTS_BINDS                      "Client binds"   // from scripts.cfg, Client/Server
+#define SECTION_MAPPER_SCRIPTS_MODULES                    "Mapper scripts" // from scripts.cfg, Mapper/Server
+#define SECTION_MAPPER_SCRIPTS_BINDS                      "Mapper binds"   // from scripts.cfg, Mapper/Server
+#define SECTION_SERVER_SCRIPTS_MODULES                    "Server scripts" // from scripts.cfg, Server only
+#define SECTION_SERVER_SCRIPTS_BINDS                      "Server binds"   // from scripts.cfg, Server only
 
 /////
 //
