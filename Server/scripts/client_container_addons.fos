@@ -80,7 +80,11 @@ void SetVolumeFillIndicator(array<ItemCl@> items)
 {
     itemsVolume = 0;
     for(uint i = 0, j = items.length(); i < j; i++)
+    {
+        if( !valid(items[i]) )
+            continue;
         itemsVolume += items[i].Proto.Volume * items[i].GetCount();
+    }
     UpdateCaption();
 }
 
