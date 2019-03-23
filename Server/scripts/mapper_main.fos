@@ -271,7 +271,8 @@ void render_iface(uint layer)
     Plugins_Render(layer);
 	if(layer == 1)
 	{
-		DrawMenu();
+		// it doesn't work anyway
+		// DrawMenu();
 		DrawDescForItems();
 	}
     if(layer == 5)
