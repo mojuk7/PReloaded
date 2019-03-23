@@ -48,7 +48,7 @@ void _Finish(Item& item, bool)
 bool _UseItem(Item& item, Critter& cr, Item@ itemUsed)
 {
     uint pid = itemUsed.GetProtoId();
-    if(pid == PID_KNIFE || pid == PID_COMBAT_KNIFE || pid == PID_LIL_JESUS_WEAPON)
+    if(TOOL_IS_KNIFE(pid))
     {
         return Gather(item, cr, itemUsed, PID_MEAT, cr.Perk[PE_SURVIVALIST] != 0 ? 2 * __MeatBatch : __MeatBatch,
                       TEXT_BUTCHERED, TEXT_NONE_LEFT, null);

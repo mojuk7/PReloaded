@@ -59,7 +59,7 @@ bool _UseItemOnPlant(Item& item, Critter& cr, Item@ usedItem)
     if(!valid(usedItem))
         return false;
     uint pid = usedItem.GetProtoId();
-    if(pid == PID_KNIFE || pid == PID_COMBAT_KNIFE || pid == PID_LIL_JESUS_WEAPON || pid == PID_THROWING_KNIFE)
+    if(TOOL_IS_KNIFE(pid))
         return Gather(item, cr, usedItem, PID_FIBER, __FibreBatch, TEXT, TEXT_EMPTY, null);
     return false;
 }

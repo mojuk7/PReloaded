@@ -32,6 +32,9 @@
 #define SAY_LACKING_SKILLS    # (crit) { crit.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, 3001); }
 #define SAY_TIMEOUT_SELF      # (cr)   { cr.SayMsg(SAY_NETMSG, TEXTMSG_GAME, STR_SKILL_WEARINESS); }
 
+// tools types; should be in synch with smart_cursor lists
+#define TOOL_IS_KNIFE         # (pid)  (pid == PID_SWITCHBLADE || pid == PID_KNIFE || pid == PID_THROWING_KNIFE || pid == PID_COMBAT_KNIFE || pid == PID_LIL_JESUS_WEAPON || pid == PID_WAKIZASHI_BLADE)
+
 shared interface IGatherCallback
 {
     void Callback(Item& item, Critter& cr, Item@ usedItem);
