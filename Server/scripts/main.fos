@@ -2068,9 +2068,23 @@ void critter_init(Critter& cr, bool firstTime)
         int[] slots = { SLOT_ARMOR, ITEM_PERK_ARMOR, SLOT_HEAD, ITEM_PERK_HELMET };
         for(uint s = 0, slen = slots.length(); s < slen; s += 2)
         {
+            // fix for bugged stats after rollback or some other weird armor replacement stuff
+
+            uint perkTypeParam = ItemPerkTypeParam(slots[s + 1]);
+            if (perkTypeParam == 0)
+                continue;
+
             Item@ item = cr.GetItem(0, slots[s]);
-            if(!valid(item) && cr.Stat[slots[s + 1]] != 0)
+            //naked char with extra stats
+            if(!valid(item) && cr.Stat[perkTypeParam] != 0)
                 DisableItemPerk(cr, slots[s + 1]);
+
+            //char in armor but with different stats
+            if(valid(item) && cr.Stat[perkTypeParam] != 0 && cr.Stat[perkTypeParam] != int(item.Proto.Armor_Perk))
+                DisableItemPerk(cr, slots[s + 1]);
+            //char in armor with stats
+            if(valid(item) && cr.Stat[perkTypeParam] == 0 && cr.Stat[perkTypeParam] != int(item.Proto.Armor_Perk))
+                EnableItemPerk(cr, item, slots[s + 1]);
         }
 
         // group index/rank sync if player
