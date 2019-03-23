@@ -985,6 +985,33 @@ string getsize(string)
         return("No idea");
 }
 
+string chopchopchop(string)
+{
+	MapperMap@ map = GetActiveMap();
+	if( !valid(map) )
+		return "Map not loaded.";
+
+	array<uint16> scen_tree = { 2945, 2946, 2947 };
+	array<uint16> item_tree = { PID_TREE1_FIREWOOD, PID_TREE2_FIREWOOD, PID_TREE3_FIREWOOD };
+
+	array<MapperObject@> sceneries;
+	for(uint s = 0, sLen = map.GetObjects(1, 1, 10000, MAP_OBJECT_SCENERY, 0, sceneries); s<sLen ; s++)
+	{
+		MapperObject@ scenery = sceneries[s];
+
+		if( scen_tree.find( scenery.ProtoId ) >= 0 )
+		{
+			MapperObject@ obj = map.AddObject( scenery.MapX, scenery.MapY, MAP_OBJECT_ITEM, item_tree[Random( 0, item_tree.length()-1 )] );
+			obj.ScriptName = "prod_tree_firewood";
+			obj.FuncName   = "item_init";
+
+			DeleteObject( scenery );
+		}
+	}
+
+	return "CHOP! CHOP! CHOP!";
+}
+
 string FixLockers(string)
 {
     MapperMap@ map = GetActiveMap();

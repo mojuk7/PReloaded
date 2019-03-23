@@ -2,8 +2,8 @@
 Version              4
 MaxHexX              152
 MaxHexY              147
-WorkHexX             67
-WorkHexY             65
+WorkHexX             96
+WorkHexY             112
 ScriptModule         -
 ScriptFunc           -
 NoLogOut             0
@@ -28147,429 +28147,9 @@ MapX                 89
 MapY                 118
 
 MapObjType           2
-ProtoId              2945
-MapX                 92
-MapY                 46
-
-MapObjType           2
-ProtoId              2945
-MapX                 44
-MapY                 20
-
-MapObjType           2
-ProtoId              2945
-MapX                 38
-MapY                 36
-
-MapObjType           2
-ProtoId              2945
-MapX                 31
-MapY                 45
-
-MapObjType           2
-ProtoId              2945
-MapX                 21
-MapY                 40
-
-MapObjType           2
-ProtoId              2945
-MapX                 28
-MapY                 31
-
-MapObjType           2
-ProtoId              2945
-MapX                 15
-MapY                 53
-
-MapObjType           2
-ProtoId              2945
-MapX                 9
-MapY                 47
-
-MapObjType           2
-ProtoId              2945
-MapX                 46
-MapY                 91
-
-MapObjType           2
-ProtoId              2945
-MapX                 36
-MapY                 65
-
-MapObjType           2
-ProtoId              2945
-MapX                 36
-MapY                 86
-
-MapObjType           2
-ProtoId              2945
-MapX                 61
-MapY                 120
-
-MapObjType           2
-ProtoId              2945
-MapX                 58
-MapY                 115
-
-MapObjType           2
-ProtoId              2945
-MapX                 48
-MapY                 110
-
-MapObjType           2
-ProtoId              2945
-MapX                 67
-MapY                 126
-
-MapObjType           2
-ProtoId              2945
-MapX                 89
-MapY                 123
-
-MapObjType           2
-ProtoId              2945
-MapX                 96
-MapY                 48
-
-MapObjType           2
-ProtoId              2945
-MapX                 108
-MapY                 48
-
-MapObjType           2
-ProtoId              2945
-MapX                 57
-MapY                 32
-
-MapObjType           2
-ProtoId              2946
-MapX                 101
-MapY                 51
-
-MapObjType           2
-ProtoId              2946
-MapX                 103
-MapY                 47
-
-MapObjType           2
-ProtoId              2946
-MapX                 105
-MapY                 46
-
-MapObjType           2
-ProtoId              2946
-MapX                 58
-MapY                 29
-
-MapObjType           2
-ProtoId              2946
-MapX                 48
-MapY                 27
-
-MapObjType           2
-ProtoId              2946
-MapX                 47
-MapY                 8
-
-MapObjType           2
-ProtoId              2946
-MapX                 47
-MapY                 8
-
-MapObjType           2
-ProtoId              2946
-MapX                 50
-MapY                 23
-
-MapObjType           2
-ProtoId              2946
-MapX                 35
-MapY                 34
-
-MapObjType           2
-ProtoId              2946
-MapX                 33
-MapY                 35
-
-MapObjType           2
-ProtoId              2946
-MapX                 31
-MapY                 39
-
-MapObjType           2
-ProtoId              2946
-MapX                 28
-MapY                 43
-
-MapObjType           2
-ProtoId              2946
-MapX                 26
-MapY                 44
-
-MapObjType           2
-ProtoId              2946
-MapX                 24
-MapY                 48
-
-MapObjType           2
-ProtoId              2946
-MapX                 20
-MapY                 57
-
-MapObjType           2
-ProtoId              2946
-MapX                 22
-MapY                 56
-
-MapObjType           2
-ProtoId              2946
-MapX                 18
-MapY                 61
-
-MapObjType           2
-ProtoId              2946
-MapX                 31
-MapY                 64
-
-MapObjType           2
-ProtoId              2946
-MapX                 33
-MapY                 63
-
-MapObjType           2
-ProtoId              2946
-MapX                 29
-MapY                 68
-
-MapObjType           2
-ProtoId              2946
-MapX                 43
-MapY                 89
-
-MapObjType           2
-ProtoId              2946
-MapX                 41
-MapY                 90
-
-MapObjType           2
-ProtoId              2946
-MapX                 39
-MapY                 94
-
-MapObjType           2
-ProtoId              2946
-MapX                 55
-MapY                 113
-
-MapObjType           2
-ProtoId              2946
-MapX                 53
-MapY                 114
-
-MapObjType           2
 ProtoId              2049
 MapX                 53
 MapY                 114
-
-MapObjType           2
-ProtoId              2946
-MapX                 70
-MapY                 134
-
-MapObjType           2
-ProtoId              2946
-MapX                 72
-MapY                 130
-
-MapObjType           2
-ProtoId              2946
-MapX                 74
-MapY                 129
-
-MapObjType           2
-ProtoId              2946
-MapX                 83
-MapY                 138
-
-MapObjType           2
-ProtoId              2946
-MapX                 85
-MapY                 134
-
-MapObjType           2
-ProtoId              2946
-MapX                 87
-MapY                 133
-
-MapObjType           2
-ProtoId              2946
-MapX                 92
-MapY                 131
-
-MapObjType           2
-ProtoId              2946
-MapX                 94
-MapY                 127
-
-MapObjType           2
-ProtoId              2946
-MapX                 99
-MapY                 115
-
-MapObjType           2
-ProtoId              2946
-MapX                 95
-MapY                 122
-
-MapObjType           2
-ProtoId              2946
-MapX                 105
-MapY                 128
-
-MapObjType           2
-ProtoId              2946
-MapX                 107
-MapY                 127
-
-MapObjType           2
-ProtoId              2945
-MapX                 90
-MapY                 135
-
-MapObjType           2
-ProtoId              2945
-MapX                 81
-MapY                 122
-
-MapObjType           2
-ProtoId              2945
-MapX                 80
-MapY                 130
-
-MapObjType           2
-ProtoId              2945
-MapX                 77
-MapY                 127
-
-MapObjType           2
-ProtoId              2945
-MapX                 100
-MapY                 124
-
-MapObjType           2
-ProtoId              2945
-MapX                 98
-MapY                 124
-
-MapObjType           2
-ProtoId              2945
-MapX                 99
-MapY                 121
-
-MapObjType           2
-ProtoId              2945
-MapX                 30
-MapY                 80
-
-MapObjType           2
-ProtoId              2945
-MapX                 20
-MapY                 54
-
-MapObjType           2
-ProtoId              2945
-MapX                 26
-MapY                 60
-
-MapObjType           2
-ProtoId              2945
-MapX                 25
-MapY                 58
-
-MapObjType           2
-ProtoId              2945
-MapX                 51
-MapY                 27
-
-MapObjType           2
-ProtoId              2947
-MapX                 95
-MapY                 45
-
-MapObjType           2
-ProtoId              2947
-MapX                 97
-MapY                 43
-
-MapObjType           2
-ProtoId              2947
-MapX                 24
-MapY                 50
-
-MapObjType           2
-ProtoId              2947
-MapX                 23
-MapY                 53
-
-MapObjType           2
-ProtoId              2947
-MapX                 14
-MapY                 44
-
-MapObjType           2
-ProtoId              2947
-MapX                 12
-MapY                 46
-
-MapObjType           2
-ProtoId              2947
-MapX                 35
-MapY                 77
-
-MapObjType           2
-ProtoId              2947
-MapX                 33
-MapY                 79
-
-MapObjType           2
-ProtoId              2947
-MapX                 47
-MapY                 101
-
-MapObjType           2
-ProtoId              2947
-MapX                 45
-MapY                 103
-
-MapObjType           2
-ProtoId              2947
-MapX                 62
-MapY                 117
-
-MapObjType           2
-ProtoId              2947
-MapX                 77
-MapY                 123
-
-MapObjType           2
-ProtoId              2947
-MapX                 79
-MapY                 121
-
-MapObjType           2
-ProtoId              2947
-MapX                 97
-MapY                 115
-
-MapObjType           2
-ProtoId              2947
-MapX                 97
-MapY                 117
-
-MapObjType           2
-ProtoId              2947
-MapX                 95
-MapY                 117
 
 MapObjType           0
 ProtoId              362
@@ -28790,5 +28370,593 @@ MapX                 68
 MapY                 63
 ContainerUID         1
 Item_Count           200
+
+MapObjType           1
+ProtoId              1822
+MapX                 92
+MapY                 46
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 44
+MapY                 20
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 38
+MapY                 36
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 31
+MapY                 45
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 21
+MapY                 40
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 28
+MapY                 31
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 15
+MapY                 53
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 9
+MapY                 47
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 46
+MapY                 91
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 36
+MapY                 65
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 36
+MapY                 86
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 61
+MapY                 120
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 58
+MapY                 115
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 48
+MapY                 110
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 67
+MapY                 126
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 89
+MapY                 123
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 96
+MapY                 48
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 108
+MapY                 48
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 57
+MapY                 32
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 101
+MapY                 51
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 103
+MapY                 47
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 105
+MapY                 46
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 58
+MapY                 29
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 48
+MapY                 27
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 47
+MapY                 8
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 47
+MapY                 8
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 50
+MapY                 23
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 35
+MapY                 34
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 33
+MapY                 35
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 31
+MapY                 39
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 28
+MapY                 43
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 26
+MapY                 44
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 24
+MapY                 48
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 20
+MapY                 57
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 22
+MapY                 56
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 18
+MapY                 61
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 31
+MapY                 64
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 33
+MapY                 63
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 29
+MapY                 68
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 43
+MapY                 89
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 41
+MapY                 90
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 39
+MapY                 94
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 55
+MapY                 113
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 53
+MapY                 114
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 70
+MapY                 134
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 72
+MapY                 130
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 74
+MapY                 129
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 83
+MapY                 138
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 85
+MapY                 134
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 87
+MapY                 133
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 92
+MapY                 131
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 94
+MapY                 127
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 99
+MapY                 115
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 95
+MapY                 122
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 105
+MapY                 128
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 107
+MapY                 127
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 90
+MapY                 135
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 81
+MapY                 122
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 80
+MapY                 130
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 77
+MapY                 127
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 100
+MapY                 124
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 98
+MapY                 124
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 99
+MapY                 121
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 30
+MapY                 80
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 20
+MapY                 54
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 26
+MapY                 60
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 25
+MapY                 58
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 51
+MapY                 27
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 95
+MapY                 45
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 97
+MapY                 43
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 24
+MapY                 50
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 23
+MapY                 53
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 14
+MapY                 44
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1822
+MapX                 12
+MapY                 46
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 35
+MapY                 77
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 33
+MapY                 79
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 47
+MapY                 101
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 45
+MapY                 103
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 62
+MapY                 117
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 77
+MapY                 123
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 79
+MapY                 121
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 97
+MapY                 115
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1821
+MapX                 97
+MapY                 117
+ScriptName           prod_tree_firewood
+FuncName             item_init
+
+MapObjType           1
+ProtoId              1820
+MapX                 95
+MapY                 117
+ScriptName           prod_tree_firewood
+FuncName             item_init
 
 
