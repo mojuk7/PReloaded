@@ -25,58 +25,55 @@ namespace FOCommon.Parsers
             if (!File.Exists(filename))
                 return false;
 
+            ScriptApp App = ScriptApp.Server;
+            ScriptType Type = ScriptType.Module;
+
             Lines.Clear();
             Lines.AddRange(File.ReadAllLines(filename));
             foreach (string Line in Lines)
             {
-                if ((Line.Length>0)&&(Line[0] == '#'))
+                if (string.IsNullOrEmpty(Line) || (Line.Length > 0 && Line[0] == '#'))
                     continue;
 
-                if ((!Line.Contains("server") && !Line.Contains("client") && !Line.Contains("mapper")) || string.IsNullOrEmpty(Line))
+                if (Line[0] == '[')
+                {
+                    if (Line.ToLower().Contains("server"))
+                        App = ScriptApp.Server;
+                    else if (Line.ToLower().Contains("client"))
+                        App = ScriptApp.Server;
+                    else if (Line.ToLower().Contains("mapper"))
+                        App = ScriptApp.Server;
+                    else
+                        return false;
+
+                    if (Line.ToLower().Contains("scripts"))
+                        Type = ScriptType.Module;
+                    else if (Line.ToLower().Contains("binds"))
+                        Type = ScriptType.Bind;
+                    else
+                        return false;
+
                     continue;
+                }
+
+                string[] row = Line.Split('=');
+                string[] parameters = row[1].Split('#');
+                string param = String.Join(" ", parameters[0].Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries));
 
                 bool Enabled;
                 string Reserved = "";
-                ScriptApp App;
-                ScriptType Type;
-                int i = 0;
 
-                char[] del = { ' ', '\t' };
-                string[] param = Line.Split(del, StringSplitOptions.RemoveEmptyEntries);
-                if (param[0] == "@")
-                {
-                    i = 1;
-                    Enabled = true;
-                }
-                else
-                    Enabled = false;
+                Enabled = param.ToLower() == "load";
 
-                string AppStr = param[i];
-                if(AppStr=="server")
-                    App=ScriptApp.Server;
-                else if(AppStr=="client")
-                    App=ScriptApp.Client;
-                else
-                    App=ScriptApp.Mapper;
-
-                string TypeStr = param[i + 1];
-                if (TypeStr == "module")
-                    Type = ScriptType.Module;
-                else
-                    Type = ScriptType.Bind;
-
-                char[] trim = { '\t', '#' };
-                string Name = param[i + 2].TrimEnd(trim);
+                string Name = row[0].Trim(new char[] { ' ', '\t' });
                 List<string> Desc = new List<string>();
 
                 if (Type == ScriptType.Bind)
-                    Reserved = param[3 + i++];
+                    Reserved = param;
 
                 ScriptDeclaration script = new ScriptDeclaration(Name, App, Type, Enabled);
-                for (int y = i + 4; y < param.Length; y++)
-                    Desc.Add(param[y].Trim(trim));
 
-                script.Description = String.Join(" ",Desc.ToArray());
+                script.Description = (parameters.Length > 1) ? parameters[1].Trim(new char[] { ' ', '\t' }) : "";
                 script.ReservedPlace = Reserved;
                 Scripts.Add(script);
             }

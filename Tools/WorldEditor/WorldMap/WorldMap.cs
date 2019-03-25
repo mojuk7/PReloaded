@@ -48,7 +48,7 @@ namespace WorldEditor
             this.GMParser              = new FOGMParser(Config.PathGm);
             this.GWParser              = new GWParser(Config.PathGw);
             this.FOGameParser          = new FOGAMEParser(Config.PathGame);
-            this.DialogListParser      = new DialogListParser(Config.PathDialogsDir + "/dialogs.lst");
+            this.DialogListParser      = new DialogListParser(Config.PathDialogsDir + "/dialogs.cfg");
             this.FODLGParser           = new FOCommon.Parsers.MSGParser(Config.PathDlg);
             this.FOOBJParser           = new FOCommon.Parsers.MSGParser(Config.PathTextDir + " /FOOBJ.MSG");
             this.GroupParser           = new EncounterGroupParser(Config.PathGroups, FOGameParser, DialogListParser, GMParser, FODLGParser);

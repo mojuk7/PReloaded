@@ -45,24 +45,23 @@ namespace FOCommon.Parsers
             List<String> lines = new List<string>(File.ReadAllLines(filename));
             foreach (String line in lines)
             {
-                if (line.Contains("*")||string.IsNullOrEmpty(line))
+                if (string.IsNullOrEmpty(line) || line[0] == '#')
                     continue;
 
-                char[] del = {'\t', ' '};
-                string[] parts = line.Split(del, StringSplitOptions.RemoveEmptyEntries);
+                string[] parts = line.Split(new char[] { '=' }, StringSplitOptions.RemoveEmptyEntries);
                 if (parts.Length < 2)
                     continue;
+
                 int i = 0;
                 bool enabled;
-                if (parts.Length == 3)
-                {
-                    enabled = true;
-                    i = 1;
-                }
+
+                if (Int32.TryParse(parts[1].Trim(new char[] { ' ', '\t' }), out i))
+                    enabled = i > 0;
                 else
                     enabled = false;
-                Dialogs.Add(new ListDialog(Int32.Parse(parts[i]), parts[i + 1], enabled));
-                
+
+                Dialogs.Add(new ListDialog(i, parts[0].Trim(new char[] { ' ', '\t' }), enabled));
+
             }
             _IsParsed = true;
             return true;

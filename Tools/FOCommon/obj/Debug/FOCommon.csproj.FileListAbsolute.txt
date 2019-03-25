@@ -34,3 +34,9 @@ d:\Dev\fonline\FOClassic Reloaded\Tools\FOCommon\obj\Debug\FOCommon.csprojAssemb
 d:\Dev\fonline\FOClassic Reloaded\Tools\FOCommon\obj\Debug\FOCommon.csproj.CoreCompileInputs.cache
 d:\Dev\fonline\FOClassic Reloaded\Tools\FOCommon\obj\Debug\FOCommon.dll
 d:\Dev\fonline\FOClassic Reloaded\Tools\FOCommon\obj\Debug\FOCommon.pdb
+d:\Dev\fonline\FOClassic\PReloaded\Tools\FOCommon\bin\Debug\FOCommon.dll
+d:\Dev\fonline\FOClassic\PReloaded\Tools\FOCommon\bin\Debug\FOCommon.pdb
+d:\Dev\fonline\FOClassic\PReloaded\Tools\FOCommon\obj\Debug\FOCommon.csprojAssemblyReference.cache
+d:\Dev\fonline\FOClassic\PReloaded\Tools\FOCommon\obj\Debug\FOCommon.csproj.CoreCompileInputs.cache
+d:\Dev\fonline\FOClassic\PReloaded\Tools\FOCommon\obj\Debug\FOCommon.dll
+d:\Dev\fonline\FOClassic\PReloaded\Tools\FOCommon\obj\Debug\FOCommon.pdb

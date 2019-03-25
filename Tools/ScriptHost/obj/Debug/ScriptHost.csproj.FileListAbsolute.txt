@@ -76,3 +76,15 @@ d:\Dev\fonline\FOClassic Reloaded\Tools\ScriptHost\obj\Debug\ScriptHost.csproj.C
 d:\Dev\fonline\FOClassic Reloaded\Tools\ScriptHost\obj\Debug\ScriptHost.csproj.CopyComplete
 d:\Dev\fonline\FOClassic Reloaded\Tools\ScriptHost\obj\Debug\ScriptHost.dll
 d:\Dev\fonline\FOClassic Reloaded\Tools\ScriptHost\obj\Debug\ScriptHost.pdb
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\bin\Debug\ScriptHost.dll
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\bin\Debug\ScriptHost.pdb
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\bin\Debug\CSScriptLibrary.dll
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\obj\Debug\ScriptHost.csprojAssemblyReference.cache
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\obj\Debug\ScriptHost.Forms.frmExtensionList.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\obj\Debug\ScriptHost.Forms.frmScriptLoad.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\obj\Debug\ScriptHost.Forms.frmScriptsLoaded.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\obj\Debug\ScriptHost.csproj.GenerateResource.cache
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\obj\Debug\ScriptHost.csproj.CoreCompileInputs.cache
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\obj\Debug\ScriptHost.csproj.CopyComplete
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\obj\Debug\ScriptHost.dll
+d:\Dev\fonline\FOClassic\PReloaded\Tools\ScriptHost\obj\Debug\ScriptHost.pdb

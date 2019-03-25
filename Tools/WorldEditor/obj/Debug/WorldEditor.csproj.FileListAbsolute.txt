@@ -256,3 +256,47 @@ d:\Dev\fonline\FOClassic Reloaded\Tools\WorldEditor\ScriptHost.dll
 d:\Dev\fonline\FOClassic Reloaded\Tools\WorldEditor\CSScriptLibrary.dll
 d:\Dev\fonline\FOClassic Reloaded\Tools\WorldEditor\FOCommon.pdb
 d:\Dev\fonline\FOClassic Reloaded\Tools\WorldEditor\ScriptHost.pdb
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.csprojAssemblyReference.cache
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmAbout.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmAddMaps.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmEditSpecialEncounter.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmEditTownMap.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmGenerateDefines.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmLocationEditor.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmScriptList.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmShell.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmSpecialEncounters.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.ProtoEditor.frmCritterProtoList.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.ProtoEditor.frmProtoCritterEditor.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.ProtoEditor.frmProtoCritterRawEditor.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.NZone.EncounterGroup.frmFilter.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.NZone.EncounterGroup.frmSelectObject.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmAddFlag.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmAddLocation.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmEditGroup.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmBrush.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmEditLocation.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmMapEditor.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.NZone.EncounterGroup.frmEncounterGroupEditor.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmAddGroup.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmMain.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmLocation.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmEditMap.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmSettingsCopying.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmSettingsGeneral.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmStringEditor.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.frmZoneValueDisplay.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.Properties.Resources.resources
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.csproj.GenerateResource.cache
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.csproj.CoreCompileInputs.cache
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.csproj.CopyComplete
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\WorldEditor.exe.config
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.exe
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\obj\Debug\WorldEditor.pdb
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\WorldEditor.exe
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\WorldEditor.pdb
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\FOCommon.dll
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\ScriptHost.dll
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\CSScriptLibrary.dll
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\FOCommon.pdb
+d:\Dev\fonline\FOClassic\PReloaded\Tools\WorldEditor\ScriptHost.pdb
