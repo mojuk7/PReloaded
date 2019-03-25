@@ -32,7 +32,7 @@ namespace FOCommon.Parsers
             Lines.AddRange(File.ReadAllLines(filename));
             foreach (string Line in Lines)
             {
-                if (string.IsNullOrEmpty(Line) || (Line.Length > 0 && Line[0] == '#'))
+                if (string.IsNullOrEmpty(Line?.Trim() ?? string.Empty) || Line.TrimStart(new char[] { ' ', '\t' }).StartsWith("#") || Line.TrimStart(new char[] { ' ', '\t' }).StartsWith(";"))
                     continue;
 
                 if (Line[0] == '[')
@@ -57,13 +57,13 @@ namespace FOCommon.Parsers
                 }
 
                 string[] row = Line.Split('=');
-                string[] parameters = row[1].Split('#');
+                string[] parameters = row[1].Split(new char[] { '#', ';' });
                 string param = String.Join(" ", parameters[0].Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries));
 
                 bool Enabled;
                 string Reserved = "";
 
-                Enabled = param.ToLower() == "load";
+                Enabled = Type == ScriptType.Bind || param.ToLower() == "load";
 
                 string Name = row[0].Trim(new char[] { ' ', '\t' });
                 List<string> Desc = new List<string>();

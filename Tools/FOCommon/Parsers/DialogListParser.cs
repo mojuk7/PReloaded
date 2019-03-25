@@ -45,8 +45,8 @@ namespace FOCommon.Parsers
             List<String> lines = new List<string>(File.ReadAllLines(filename));
             foreach (String line in lines)
             {
-                if (string.IsNullOrEmpty(line) || line[0] == '#')
-                    continue;
+                if (string.IsNullOrEmpty(line?.Trim() ?? string.Empty) || line.TrimStart(new char[] { ' ', '\t' }).StartsWith("#") || line.TrimStart(new char[] { ' ', '\t' }).StartsWith(";"))
+                    continue;;
 
                 string[] parts = line.Split(new char[] { '=' }, StringSplitOptions.RemoveEmptyEntries);
                 if (parts.Length < 2)
