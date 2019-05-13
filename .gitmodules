@@ -1,0 +1,4 @@
+[submodule "Engine"]
+	path = Source/Engine
+	url = https://github.com/rotators/foclassic.git
+	branch = extensions

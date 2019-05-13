@@ -1,6 +1,10 @@
 .gitignore
 !/.gitignore
 
+/Build/
+/Cache/
+
+CMakePReloaded.txt
 CrashDump*.txt
 
 /Client/*.log

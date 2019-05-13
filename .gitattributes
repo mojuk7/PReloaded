@@ -5,6 +5,10 @@
 .gitignore     text eol=lf
 .gitattributes text eol=lf
 
+# batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
 # intellisense creator
 intellisense*.h text eol=lf
 
