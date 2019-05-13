@@ -1,6 +1,14 @@
 ##
 ## secret stuff, such as FOCLASSIC_HASH_STRING, should be separated from regular config and excluded from repository
 ##
+
 if( EXISTS "${CMAKE_CURRENT_LIST_DIR}/CMakePReloaded.txt" )
 	include( "${CMAKE_CURRENT_LIST_DIR}/CMakePReloaded.txt" )
 endif()
+
+##
+## due to way how CMakeFOClassic.txt is included, binary directory has to be set as well
+## see https://cmake.org/cmake/help/latest/command/add_subdirectory.html
+##
+
+add_subdirectory( "${P_ROOT_DIR}/Source/Extensions" "P/Extensions" )

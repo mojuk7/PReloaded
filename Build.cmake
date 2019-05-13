@@ -1,22 +1,11 @@
 cmake_minimum_required( VERSION 3.12 FATAL_ERROR )
 
-find_package( Git REQUIRED QUIET )
-
-execute_process(
-	COMMAND ${GIT_EXECUTABLE} config -f .gitmodules --get submodule.Engine.path
-	WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
-	OUTPUT_VARIABLE ENGINE_DIR
-	OUTPUT_STRIP_TRAILING_WHITESPACE
-)
-
-if( NOT ENGINE_DIR )
-	message( FATAL_ERROR "Cannot find git submodule 'Engine' path" )
-endif()
+set( BUILD_DIR  "Build" )
+set( ENGINE_DIR "Source/Engine" )
 
 list( APPEND CMAKE_MODULE_PATH "${ENGINE_DIR}/CMake" )
 include( AutomatedBuild )
 
-set( BUILD_DIR "Build" )
 if( UNIX )
 	set( BUILD_FILE      "Makefile" )
 	set( BUILD_GENERATOR "Unix Makefiles" )
