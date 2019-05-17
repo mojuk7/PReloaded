@@ -5,15 +5,18 @@
 // _defines.fos
 //
 
-#ifndef __DEFINES__
-# define __DEFINES__
+#ifndef __DEFINES_FOS__
+# define __DEFINES_FOS__
 
-#ifndef FOCLASSIC_SKIP_PID
-# define FOCLASSIC_SKIP_PID
+#ifdef FOCLASSIC_ENGINE
+ // TODO this """probably""" should be in extensions code
+ #define __EXTENSIONS_SOLUTION__
+ #define SKIP_PRAGMAS
 #endif
 
-#ifndef FOCLASSIC_EXTENSION
+#ifndef FOCLASSIC_ENGINE
 # define FOCLASSIC_SCRIPT
+# define FOCLASSIC_SKIP_PID
 # include "FOClassic.fos"
 #endif
 
@@ -215,6 +218,7 @@
 #define CTE_CHEAT_AURA                           (1337)
 
 // Parameters
+
 /// Stats
 #define STAT_BEGIN                               (0)
 #define STAT_END                                 (199)
@@ -1205,43 +1209,43 @@
  */
 
 
-#  pragma bindfunc "bool Critter::IsInjured()     -> parameters.dll Critter_IsInjured   "
-#  pragma bindfunc "bool Critter::IsDmgEye()      -> parameters.dll Critter_IsDmgEye    "
-#  pragma bindfunc "bool Critter::IsDmgLeg()      -> parameters.dll Critter_IsDmgLeg    "
-#  pragma bindfunc "bool Critter::IsDmgTwoLeg()   -> parameters.dll Critter_IsDmgTwoLeg "
-#  pragma bindfunc "bool Critter::IsDmgArm()      -> parameters.dll Critter_IsDmgArm    "
-#  pragma bindfunc "bool Critter::IsDmgTwoArm()   -> parameters.dll Critter_IsDmgTwoArm "
-#  pragma bindfunc "bool Critter::IsAddicted()    -> parameters.dll Critter_IsAddicted  "
-#  pragma bindfunc "bool Critter::IsOverweight()  -> parameters.dll Critter_IsOverweight"
-#  pragma bindfunc "int Critter::GetAC(bool)      -> parameters.dll Critter_GetAC       "
-#  pragma bindfunc "int Critter::GetDR(uint,bool) -> parameters.dll Critter_GetDR       "
-#  pragma bindfunc "int Critter::GetDT(uint,bool) -> parameters.dll Critter_GetDT       "
-#  pragma bindfunc "int Critter::GetArmorDR(uint,bool) -> parameters.dll Critter_GetArmorDR  "
-#  pragma bindfunc "int Critter::GetArmorDT(uint,bool) -> parameters.dll Critter_GetArmorDT  "
+#  pragma bindfunc "bool Critter::IsInjured()     -> parameters Critter_IsInjured   "
+#  pragma bindfunc "bool Critter::IsDmgEye()      -> parameters Critter_IsDmgEye    "
+#  pragma bindfunc "bool Critter::IsDmgLeg()      -> parameters Critter_IsDmgLeg    "
+#  pragma bindfunc "bool Critter::IsDmgTwoLeg()   -> parameters Critter_IsDmgTwoLeg "
+#  pragma bindfunc "bool Critter::IsDmgArm()      -> parameters Critter_IsDmgArm    "
+#  pragma bindfunc "bool Critter::IsDmgTwoArm()   -> parameters Critter_IsDmgTwoArm "
+#  pragma bindfunc "bool Critter::IsAddicted()    -> parameters Critter_IsAddicted  "
+#  pragma bindfunc "bool Critter::IsOverweight()  -> parameters Critter_IsOverweight"
+#  pragma bindfunc "int Critter::GetAC(bool)      -> parameters Critter_GetAC       "
+#  pragma bindfunc "int Critter::GetDR(uint,bool) -> parameters Critter_GetDR       "
+#  pragma bindfunc "int Critter::GetDT(uint,bool) -> parameters Critter_GetDT       "
+#  pragma bindfunc "int Critter::GetArmorDR(uint,bool) -> parameters Critter_GetArmorDR  "
+#  pragma bindfunc "int Critter::GetArmorDT(uint,bool) -> parameters Critter_GetArmorDT  "
 
-#  pragma bindfunc "bool Item::Weapon_IsHtHAttack(uint8 mode)    -> parameters.dll Item_Weapon_IsHtHAttack   "
-#  pragma bindfunc "bool Item::Weapon_IsGunAttack(uint8 mode)    -> parameters.dll Item_Weapon_IsGunAttack   "
-#  pragma bindfunc "bool Item::Weapon_IsRangedAttack(uint8 mode) -> parameters.dll Item_Weapon_IsRangedAttack"
-#  pragma bindfunc "void Item::SetMode(uint8 mode) -> parameters.dll Item_Weapon_SetMode"
+#  pragma bindfunc "bool Item::Weapon_IsHtHAttack(uint8 mode)    -> parameters Item_Weapon_IsHtHAttack   "
+#  pragma bindfunc "bool Item::Weapon_IsGunAttack(uint8 mode)    -> parameters Item_Weapon_IsGunAttack   "
+#  pragma bindfunc "bool Item::Weapon_IsRangedAttack(uint8 mode) -> parameters Item_Weapon_IsRangedAttack"
+#  pragma bindfunc "void Item::SetMode(uint8 mode) -> parameters Item_Weapon_SetMode"
 # endif // __SERVER
 
 # ifdef __CLIENT
-#  pragma bindfunc "bool CritterCl::IsInjured()     -> client_parameters.dll Critter_IsInjured   "
-#  pragma bindfunc "bool CritterCl::IsDmgEye()      -> client_parameters.dll Critter_IsDmgEye    "
-#  pragma bindfunc "bool CritterCl::IsDmgLeg()      -> client_parameters.dll Critter_IsDmgLeg    "
-#  pragma bindfunc "bool CritterCl::IsDmgTwoLeg()   -> client_parameters.dll Critter_IsDmgTwoLeg "
-#  pragma bindfunc "bool CritterCl::IsDmgArm()      -> client_parameters.dll Critter_IsDmgArm    "
-#  pragma bindfunc "bool CritterCl::IsDmgTwoArm()   -> client_parameters.dll Critter_IsDmgTwoArm "
-#  pragma bindfunc "bool CritterCl::IsAddicted()    -> client_parameters.dll Critter_IsAddicted  "
-//#  pragma bindfunc "bool CritterCl::IsOverweight()  -> client_parameters.dll Critter_IsOverweight"
-#  pragma bindfunc "int CritterCl::GetAC(bool)      -> client_parameters.dll Critter_GetAC       "
-#  pragma bindfunc "int CritterCl::GetDR(uint,bool) -> client_parameters.dll Critter_GetDR       "
-#  pragma bindfunc "int CritterCl::GetDT(uint,bool) -> client_parameters.dll Critter_GetDT       "
+#  pragma bindfunc "bool CritterCl::IsInjured()     -> client_parameters Critter_IsInjured   "
+#  pragma bindfunc "bool CritterCl::IsDmgEye()      -> client_parameters Critter_IsDmgEye    "
+#  pragma bindfunc "bool CritterCl::IsDmgLeg()      -> client_parameters Critter_IsDmgLeg    "
+#  pragma bindfunc "bool CritterCl::IsDmgTwoLeg()   -> client_parameters Critter_IsDmgTwoLeg "
+#  pragma bindfunc "bool CritterCl::IsDmgArm()      -> client_parameters Critter_IsDmgArm    "
+#  pragma bindfunc "bool CritterCl::IsDmgTwoArm()   -> client_parameters Critter_IsDmgTwoArm "
+#  pragma bindfunc "bool CritterCl::IsAddicted()    -> client_parameters Critter_IsAddicted  "
+//#  pragma bindfunc "bool CritterCl::IsOverweight()  -> client_parameters Critter_IsOverweight"
+#  pragma bindfunc "int CritterCl::GetAC(bool)      -> client_parameters Critter_GetAC       "
+#  pragma bindfunc "int CritterCl::GetDR(uint,bool) -> client_parameters Critter_GetDR       "
+#  pragma bindfunc "int CritterCl::GetDT(uint,bool) -> client_parameters Critter_GetDT       "
 
-#  pragma bindfunc "bool ItemCl::Weapon_IsHtHAttack(uint8 mode)    -> client_parameters.dll Item_Weapon_IsHtHAttack   "
-#  pragma bindfunc "bool ItemCl::Weapon_IsGunAttack(uint8 mode)    -> client_parameters.dll Item_Weapon_IsGunAttack   "
-#  pragma bindfunc "bool ItemCl::Weapon_IsRangedAttack(uint8 mode) -> client_parameters.dll Item_Weapon_IsRangedAttack"
-#  pragma bindfunc "void ItemCl::SetMode(uint8 mode) -> client_parameters.dll Item_Weapon_SetMode"
+#  pragma bindfunc "bool ItemCl::Weapon_IsHtHAttack(uint8 mode)    -> client_parameters Item_Weapon_IsHtHAttack   "
+#  pragma bindfunc "bool ItemCl::Weapon_IsGunAttack(uint8 mode)    -> client_parameters Item_Weapon_IsGunAttack   "
+#  pragma bindfunc "bool ItemCl::Weapon_IsRangedAttack(uint8 mode) -> client_parameters Item_Weapon_IsRangedAttack"
+#  pragma bindfunc "void ItemCl::SetMode(uint8 mode) -> client_parameters Item_Weapon_SetMode"
 
 #  pragma bindfunc "void dummy_utils() -> client_utils.dll CLIENT"
 # endif // __CLIENT
@@ -1335,4 +1339,4 @@
 # pragma bindfield "const uint8  ProtoItem::Ingredient_Type_3     -> 328"
 # pragma bindfield "const uint16 ProtoItem::Ingredient_Returns_3  -> 329"
 #endif // SKIP_PRAGMAS
-#endif // __DEFINES__
+#endif // __DEFINES_FOS__

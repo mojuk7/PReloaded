@@ -3,6 +3,8 @@
 
 #include "PReloaded.h"
 
+#include "Parameters/Parameters.h"
+
 using namespace std;
 
 //
@@ -14,40 +16,52 @@ using namespace std;
 
 #if defined(FOCLASSIC_CLIENT)
 
-void InitExtensionsClient() // used by engine
+void InitExtensionsClient()
 {
 	WriteLog("Initializing extensions\n");
+
+	Extension::Map["client_parameters"] = new P::Parameters();
+
+	Extension::RunEventDebug = true;
 }
 
-void FinishExtensionsClient() // used by engine
+void FinishExtensionsClient()
 {
 	WriteLog("Finishing extensions\n");
 
-	delete (FOC::Client*)Extension::Map[FOC_CLIENT];
+	delete (P::Parameters*)Extension::Map["client_parameters"];
 }
 
 #elif defined(FOCLASSIC_MAPPER)
 
-void InitExtensionsMapper() // used by engine
+void InitExtensionsMapper()
 {
 	WriteLog("Initializing extensions\n");
+
+	Extension::RunEventDebug = true;
 }
 
-void FinishExtensionsMapper() // used by engine
+void FinishExtensionsMapper()
 {
 	WriteLog("Finishing extensions\n");
 }
 
 #elif defined(FOCLASSIC_SERVER)
 
-void InitExtensionsServer() // used by engine
+void InitExtensionsServer()
 {
 	WriteLog("Initializing extensions\n");
+
+	Extension::Map["parameters"] = new P::Parameters();
+
+	Extension::RunEventDebug = true;
 }
 
-void FinishExtensionsServer() // used by engine
+void FinishExtensionsServer()
 {
 	WriteLog("Finishing extensions\n");
+
+	delete (P::Parameters*)Extension::Map["parameters"];
 }
 
 #endif
