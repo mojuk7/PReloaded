@@ -11,8 +11,8 @@
 #ifndef __SERIALIZATOR__
 #define __SERIALIZATOR__
 
-#pragma bindfunc "int FloatToInt(float) -> Utils.dll FloatToInt"
-#pragma bindfunc "float IntToFloat(int) -> Utils.dll IntToFloat"
+#pragma bindfunc "int FloatToInt(float) -> Utils FloatToInt"
+#pragma bindfunc "float IntToFloat(int) -> Utils IntToFloat"
 
 // Class data serializator
 // AnyData wrapper

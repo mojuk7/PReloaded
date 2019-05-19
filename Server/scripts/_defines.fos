@@ -1246,8 +1246,6 @@
 #  pragma bindfunc "bool ItemCl::Weapon_IsGunAttack(uint8 mode)    -> client_parameters Item_Weapon_IsGunAttack   "
 #  pragma bindfunc "bool ItemCl::Weapon_IsRangedAttack(uint8 mode) -> client_parameters Item_Weapon_IsRangedAttack"
 #  pragma bindfunc "void ItemCl::SetMode(uint8 mode) -> client_parameters Item_Weapon_SetMode"
-
-#  pragma bindfunc "void dummy_utils() -> client_utils.dll CLIENT"
 # endif // __CLIENT
 
 ///

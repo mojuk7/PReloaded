@@ -41,8 +41,8 @@
 # define RunTargetScript         # (_cr, _name, _p0, _p1, _p2, _p3, _p4)RunServerScriptUnsafe(BUFFERLAZY_MODULE + "@unsafe_" + _name, _p0, _p1, _p2, _p3, _p4)
 #endif
 #ifdef __SERVER
-# pragma bindfunc "bool IsLocalScript(string&) -> Utils.dll Global_IsLocalScript"
-# pragma bindfunc "void Critter::RunLocalScript(string&,int,int,int,string@+,int[]@+) -> Utils.dll Critter_RunLocalScript"
+# pragma bindfunc "bool IsLocalScript(string&) -> Utils Global_IsLocalScript"
+# pragma bindfunc "void Critter::RunLocalScript(string&,int,int,int,string@+,int[]@+) -> Utils Critter_RunLocalScript"
 
 # define RunTargetScript         # (_cr, _name, _p0, _p1, _p2, _p3, _p4)_cr.RunClientScript(BUFFERLAZY_MODULE + "@" + _name, _p0, _p1, _p2, _p3, _p4)
 #endif

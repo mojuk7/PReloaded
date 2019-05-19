@@ -19,6 +19,22 @@ foreach( target IN ITEMS Client Mapper Server )
 endforeach()
 
 ##
+## AS
+##
+
+foreach( target IN ITEMS Client Mapper Server )
+	add_library( AS.${target} STATIC )
+	target_sources( AS.${target}
+		PRIVATE
+			${CMAKE_CURRENT_LIST_FILE}
+			AS/AS.cpp
+			AS/AS.h
+	)
+	set_property( TARGET AS.${target} PROPERTY FOLDER "Extensions/AS" )
+	FOClassicExtension( ${target} AS.${target} )
+endforeach()
+
+##
 ## Parameters
 ##
 
@@ -34,6 +50,23 @@ foreach( target IN ITEMS Client Server )
 	set_property( TARGET Parameters.${target} PROPERTY FOLDER "Extensions/Parameters" )
 	FOClassicExtension( ${target} Parameters.${target} )
 endforeach()
+
+##
+## Utils
+##
+
+add_library( Utils STATIC )
+target_sources( Utils
+	PRIVATE
+		${CMAKE_CURRENT_LIST_FILE}
+		Utils/ExtEvents.cpp
+		Utils/ExtEvents.h
+		Utils/ProtoMapEx.cpp
+		Utils/ProtoMapEx.h
+		Utils/PUtils.cpp
+		Utils/PUtils.h
+)
+FOClassicExtension( SERVER Utils )
 
 ##
 ## Prettify IDE

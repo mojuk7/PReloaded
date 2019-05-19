@@ -926,8 +926,8 @@ P::Parameters::Parameters() : Extension()
 
 size_t P::Parameters::GetFunctionAddress(const string& name)
 {
-	GET_ADDRESS_N(critter_attack_distance, GetAttackDistantion);
-	GET_ADDRESS_N(critter_use_item_ap_cost, GetUseApCost);
+	GET_ADDRESS_X(critter_attack_distance, GetAttackDistantion);
+	GET_ADDRESS_X(critter_use_item_ap_cost, GetUseApCost);
 
 	GET_ADDRESS(Critter_IsInjured);
 	GET_ADDRESS(Critter_IsDmgEye);

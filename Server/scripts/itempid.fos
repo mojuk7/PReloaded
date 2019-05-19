@@ -17,10 +17,6 @@
 #define FUNCTION_IS    # (isName, listName) bool PidIs ## isName(uint p) { array<uint> l; PidList_ ## listName(l); return (l.find(p) >= 0); }
 #define FUNCTIONS      # (isName, listName, enumName) bool PidIs ## isName(uint p) { array<uint> l; PidList_ ## listName(l); return (l.find(p) >= 0); } uint PidList_ ## listName(array<uint>&v) { return (GroupNameToPids(enumName, v)); }
 
-#ifdef __SERVER
-# pragma bindfunc "void dummy() -> Utils.dll SERVER"
-#endif
-
 void test() // ASCompiler -run
 {
     Log("PidToName( 241 ) = \"" + PidToName(241) + "\"");

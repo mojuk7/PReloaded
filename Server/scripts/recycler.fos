@@ -15,10 +15,6 @@
 #include "mapdata_h.fos"
 #include "recycler_h.fos"
 
-#pragma bindfunc "void dummy() -> Utils.dll SERVER"
-
-
-
 array<uint> Recycler =
 {
     0,  // ENCOUNTER_RECYCLER

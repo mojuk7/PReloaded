@@ -31,7 +31,7 @@
 # define BroadcastDebugSay      # (text);
 #endif
 
-#pragma bindfunc "int string::replaceText(string@+,string@+) -> Utils.dll String_ReplaceText"
+#pragma bindfunc "int string::replaceText(string@+,string@+) -> Utils String_ReplaceText"
 
 import bool GodOfTheRealm(uint id) from "cheats";
 import int  GetFactionNameMsg(uint faction) from "factions";

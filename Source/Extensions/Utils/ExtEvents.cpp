@@ -1,10 +1,17 @@
-#define FOCLASSIC_EXTENSION
-
-#include "common.h"
+//#include "common.h"
 #include <string>
 #include <sstream>
 
-#define LOG_ERROR(err) do{ Log("Utils.dll@%s : %s\n", __FUNCTION__, err); }while(false)
+#include <Critter.h>
+#include <Log.h>
+#include <Script.h>
+
+#include "ExtEvents.h"
+#include "PReloaded.h"
+
+using namespace std;
+
+#define LOG_ERROR(err) do{ WriteLog("Utils@%s : %s\n", __FUNCTION__, err); }while(false)
 
 namespace ScriptUtils
 {
@@ -21,10 +28,10 @@ extern bool ParseScript(const string& script, string& module, string& func);
 
 int* GetEventPtr(Critter* cr, int event_type)
 {
-	return (int*)(&(cr->UserData[CRITTER_EVENT_EXT_INDEX_START + event_type * sizeof(int)]));
+	return (int*)(&(cr->Data.UserData[CRITTER_EVENT_EXT_INDEX_START + event_type * sizeof(int)]));
 }
 
-EXPORT void Critter_ClearExtEvents(Critter* cr)
+void P::Critter_ClearExtEvents(Critter* cr)
 {
     if( cr->IsNotValid )
 	{
@@ -35,7 +42,7 @@ EXPORT void Critter_ClearExtEvents(Critter* cr)
 		*GetEventPtr(cr,i) = 0;
 }
 
-EXPORT bool Critter_SetEventExt(Critter* cr, int event_type, ScriptString* func_name)
+bool P::Critter_SetEventExt(Critter* cr, int event_type, ScriptString* func_name)
 {
     if( cr->IsNotValid )
 	{
@@ -61,7 +68,7 @@ EXPORT bool Critter_SetEventExt(Critter* cr, int event_type, ScriptString* func_
 		static char buf[2048];
 		sprintf(buf, ScriptUtils::ExtEvents[event_type], func.c_str());
 
-        *GetEventPtr(cr,event_type) = FOClassic->ScriptBind(module.c_str(), buf, false);
+		*GetEventPtr(cr, event_type) = Script::Bind(module.c_str(), buf, NULL, false, false);
         if(*GetEventPtr(cr,event_type) <= 0)
 		{
             LOG_ERROR( "Function not found." );
@@ -71,30 +78,30 @@ EXPORT bool Critter_SetEventExt(Critter* cr, int event_type, ScriptString* func_
     return true;
 }
 
-EXPORT bool Critter_EventExtMapIn(Critter* cr, Map* map)
+bool P::Critter_EventExtMapIn(Critter* cr, Map* map)
 {
 	int id = *GetEventPtr(cr, CRITTER_EVENT_EXT_MAP_IN);
 	if(id <= 0) return false;
-	if(FOClassic->ScriptPrepare(id))
+	if(Script::PrepareContext(id,_FUNC_,"ExtensionCall"))
 	{
-		FOClassic->ScriptSetArgObject(cr);
-		FOClassic->ScriptSetArgObject(map);
-		FOClassic->ScriptRunPrepared();
-		return FOClassic->ScriptGetReturnedBool();
+		Script::SetArgObject(cr);
+		Script::SetArgObject(map);
+		Script::RunPrepared();
+		return Script::GetReturnedBool();
 	}
 	return false;
 }
 
-EXPORT bool Critter_EventExtMapOut(Critter* cr, Map* map)
+bool P::Critter_EventExtMapOut(Critter* cr, Map* map)
 {
 	int id = *GetEventPtr(cr, CRITTER_EVENT_EXT_MAP_OUT);
 	if(id <= 0) return false;
-	if(FOClassic->ScriptPrepare(id))
+	if(Script::PrepareContext(id,_FUNC_,"ExtensionCall"))
 	{
-		FOClassic->ScriptSetArgObject(cr);
-		FOClassic->ScriptSetArgObject(map);
-		FOClassic->ScriptRunPrepared();
-		return FOClassic->ScriptGetReturnedBool();
+		Script::SetArgObject(cr);
+		Script::SetArgObject(map);
+		Script::RunPrepared();
+		return Script::GetReturnedBool();
 	}
 	return false;
 }
