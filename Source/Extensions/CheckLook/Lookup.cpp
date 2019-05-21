@@ -1,5 +1,4 @@
-#define FOCLASSIC_EXTENSION
-
+#include "CheckLook.h"
 #include "Move.h"
 
 uint8* Lookup=NULL;

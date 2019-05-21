@@ -1,5 +1,6 @@
 // everything is inlined
 #include "Defines.h"
+#include "Types.h"
 
 inline void Move(uint16& cur_hx, uint16& cur_hy, char dir_move)
 {

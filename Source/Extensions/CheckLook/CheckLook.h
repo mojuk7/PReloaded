@@ -1,7 +1,7 @@
-#include "../reloaded.h"
-#include "../../scripts/ITEMPID.H"
+#ifndef __P__CHECK_LOOK__
+#define __P__CHECK_LOOK__
 
-#define MAX_PROTO_MAPS		(30000)
+#include <Extension.h>
 
 #define PI_FLOAT       (3.14159265f)
 #define PIBY2_FLOAT    (1.5707963f)
@@ -21,9 +21,9 @@
 
 //#define COND_LIFE                   (1) // Криттер жив
 
-#define _CritHasMode(cr,mode) (cr.Params[mode]>0)
-#define _CritHasExtMode(cr, mode) ((cr.Params[MODE_EXT]&(mode))!=0)
-#define _CritHasPerk(cr,perk) (cr.Params[perk]>0)
+#define _CritHasMode(cr,mode) (cr.GetRawParam(mode)>0)
+#define _CritHasExtMode(cr, mode) ((cr.GetRawParam(MODE_EXT)&(mode))!=0)
+#define _CritHasPerk(cr,perk) (cr.GetRawParam(perk)>0)
 
 #define MAP_DATA_ACTIVE_COUNTDOWN   (8)
 
@@ -44,3 +44,17 @@
 #define OCCLUDER_DIST (2) // 2 only, no reason to be more overkill
 
 #define MAX_WALLS_DIST	(5)
+
+namespace P
+{
+	class CheckLook : public Extension
+	{
+	public:
+		CheckLook();
+
+		virtual size_t GetFunctionAddress(const std::string& name) override;
+		virtual void Event(const uint& id) override;
+	};
+};
+
+#endif // __P__CHECK_LOOK__ //

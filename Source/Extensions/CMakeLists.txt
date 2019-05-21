@@ -51,6 +51,22 @@ foreach( target IN ITEMS Client Server )
 endforeach()
 
 ##
+## CheckLook
+##
+
+add_library( CheckLook STATIC )
+target_sources( CheckLook
+	PRIVATE
+		CheckLook/CheckLook.cpp
+		CheckLook/CheckLook.h
+		CheckLook/Move.h
+		CheckLook/Lookup.cpp
+		CheckLook/WallDist.cpp
+		CheckLook/WallDist.h
+)
+FOClassicExtension( SERVER CheckLook )
+
+##
 ## Parameters
 ##
 

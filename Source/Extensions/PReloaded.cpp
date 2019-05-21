@@ -7,6 +7,7 @@
 #include "Parameters/Parameters.h"
 
 #if defined(FOCLASSIC_SERVER)
+#include "CheckLook/CheckLook.h"
 #include "Utils/PUtils.h"
 #endif
 
@@ -83,6 +84,7 @@ void InitExtensionsServer()
 	WriteLog("Initializing extensions\n");
 
 	Extension::Map["buffer_lazy"] = new P::BufferLazy();
+	Extension::Map["check_look"] = new P::CheckLook();
 	Extension::Map["parameters"] = new P::Parameters();
 	Extension::Map["utils"] = new P::Utils();
 
@@ -95,6 +97,7 @@ void FinishExtensionsServer()
 	WriteLog("Finishing extensions\n");
 
 	delete (P::BufferLazy*)Extension::Map["buffer_lazy"];
+	delete (P::CheckLook*)Extension::Map["check_look"];
 	delete (P::Parameters*)Extension::Map["parameters"];
 	delete (P::Utils*)Extension::Map["utils"];
 

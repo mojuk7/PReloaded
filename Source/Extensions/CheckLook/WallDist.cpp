@@ -1,10 +1,15 @@
-#define FOCLASSIC_EXTENSION
-
-#include "WallDist.h"
-#include "Move.h"
 #include <queue>
 #include <stdio.h>
 #include <vector>
+
+#include <Map.h>
+#include <ProtoMap.h>
+
+#include "CheckLook.h"
+#include "Move.h"
+#include "WallDist.h"
+
+using namespace std;
 
 vector<WallDist*> Dists;
 
@@ -65,7 +70,7 @@ void WallDist::prepare()
 
 WallDist* GetProtoDists(Map& map)
 {
-	WallDist** wd=&(Dists[map.Proto->Pid]);
+	WallDist** wd=&(Dists[map.Proto->GetPid()]);
 	if(!*wd) *wd=new WallDist(map.Proto);
 	return *wd;
 }
