@@ -21,8 +21,8 @@
 #include "lexems_h.fos"
 
 #ifdef __SERVER
-# pragma bindfunc "void Critter::GetLexems(string&) -> Utils Critter_GetLexems"
-# pragma bindfunc "void Item::GetLexems(string&)    -> Utils Item_GetLexems"
+# pragma bindfunc "void Critter::GetLexems(string&) -> utils Critter_GetLexems"
+# pragma bindfunc "void Item::GetLexems(string&)    -> utils Item_GetLexems"
 #endif
 
 string GetCritterLexems(CritterMutual& critter)

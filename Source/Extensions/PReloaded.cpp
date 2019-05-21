@@ -10,6 +10,10 @@
 #include "Utils/PUtils.h"
 #endif
 
+#if defined(FOCLASSIC_CLIENT) || defined(FOCLASSIC_SERVER)
+#include "BufferLazy/BufferLazy.h"
+#endif
+
 using namespace std;
 
 //
@@ -24,12 +28,12 @@ using namespace std;
 
 static void InitExtensionsGeneric() // all targets
 {
-	Extension::Map["AS"] = new P::AS();
+	Extension::Map["as"] = new P::AS();
 }
 
 static void FinishExtensionsGeneric() // all targets
 {
-	delete (P::AS*)Extension::Map["AS"];
+	delete (P::AS*)Extension::Map["as"];
 }
 
 #if defined(FOCLASSIC_CLIENT)
@@ -38,6 +42,7 @@ void InitExtensionsClient()
 {
 	WriteLog("Initializing extensions\n");
 
+	Extension::Map["buffer_llazy"] = new P::BufferLazy();
 	Extension::Map["client_parameters"] = new P::Parameters();
 
 	InitExtensionsGeneric();
@@ -48,6 +53,7 @@ void FinishExtensionsClient()
 {
 	WriteLog("Finishing extensions\n");
 
+	delete (P::BufferLazy*)Extension::Map["buffer_lazy"];
 	delete (P::Parameters*)Extension::Map["client_parameters"];
 
 	FinishExtensionsGeneric();
@@ -76,8 +82,9 @@ void InitExtensionsServer()
 {
 	WriteLog("Initializing extensions\n");
 
+	Extension::Map["buffer_lazy"] = new P::BufferLazy();
 	Extension::Map["parameters"] = new P::Parameters();
-	Extension::Map["Utils"] = new P::Utils();
+	Extension::Map["utils"] = new P::Utils();
 
 	InitExtensionsGeneric();
 	Extension::RunEventDebug = true;
@@ -87,8 +94,9 @@ void FinishExtensionsServer()
 {
 	WriteLog("Finishing extensions\n");
 
+	delete (P::BufferLazy*)Extension::Map["buffer_lazy"];
 	delete (P::Parameters*)Extension::Map["parameters"];
-	delete (P::Utils*)Extension::Map["Utils"];
+	delete (P::Utils*)Extension::Map["utils"];
 
 	FinishExtensionsGeneric();
 }

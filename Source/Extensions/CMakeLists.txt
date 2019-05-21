@@ -35,6 +35,22 @@ foreach( target IN ITEMS Client Mapper Server )
 endforeach()
 
 ##
+## BufferLazy
+##
+
+foreach( target IN ITEMS Client Server )
+	add_library( BufferLazy.${target} STATIC )
+	target_sources( BufferLazy.${target}
+		PRIVATE
+			${CMAKE_CURRENT_LIST_FILE}
+			BufferLazy/BufferLazy.cpp
+			BufferLazy/BufferLazy.h
+	)
+	set_property( TARGET BufferLazy.${target} PROPERTY FOLDER "Extensions/BufferLazy" )
+	FOClassicExtension( ${target} BufferLazy.${target} )
+endforeach()
+
+##
 ## Parameters
 ##
 

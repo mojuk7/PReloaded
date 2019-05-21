@@ -9,7 +9,6 @@
 #include "_macros.fos"
 
 #pragma bindfunc "void dummy_devconnect() -> DevConnect.dll SERVER"
-#pragma bindfunc "void dummy_utils() -> Utils.dll SERVER"
 
 import string IpToString(uint ip) from "utils";
 import uint   GetAllOnlinePlayers(array<Critter@>& out players) from "utils";
