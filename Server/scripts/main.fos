@@ -38,7 +38,7 @@
 #include "MsgStr.h"
 #include "npc_common_h.fos"
 #include "npc_planes_h.fos"
-#include "online_stats_h.fos"
+//#include "online_stats_h.fos"
 #include "pdata_h.fos"
 #include "recycler_h.fos"
 #include "reinforcements_h.fos"
@@ -500,6 +500,7 @@ uint loop()
 
     UpdateBroadcast();
 
+/*
     if(last_os_save == 0)
         last_os_save = ELAPSED_TIME;
     else if(ELAPSED_TIME > last_os_save + OS_CYCLE_TIME)
@@ -514,6 +515,7 @@ uint loop()
         if(last_os_mod == OS_MAX_MOD)
             last_os_mod = 0;
     }
+*/
 
     lastsecond = second;
     return 500;
@@ -1779,7 +1781,7 @@ void critter_init(Critter& cr, bool firstTime)
 
         // such paranoic i am!
         CreateTimeEvent(AFTER(REAL_SECOND(5)), "e_CritterInit_Broadcast", cr.Id, false);
-        CreateTimeEvent(AFTER(REAL_SECOND(6)), "e_CritterInit_OnlineStats", cr.Id, false);
+        //CreateTimeEvent(AFTER(REAL_SECOND(6)), "e_CritterInit_OnlineStats", cr.Id, false);
 
         int   modeRun = 0;
         Item@ weap = cr.GetItem(0, SLOT_HAND1);
@@ -2147,7 +2149,7 @@ uint e_CritterInit_Broadcast(array<int>@ data)
 
     return(0);
 }
-
+/*
 uint e_CritterInit_OnlineStats(array<int>@ data)
 {
     Critter@ cr = GetCritter(data[0]);
@@ -2156,7 +2158,7 @@ uint e_CritterInit_OnlineStats(array<int>@ data)
 
     return(0);
 }
-
+*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Call on critter exit from game.
 
@@ -2226,11 +2228,12 @@ void critter_finish(Critter& cr, bool toDelete)
     		message += delMap + " caps: " + delCaps + " book: " + (bookCreated == true ? "YES" : "NO");
     		FLog(LOG_CHARS_DELETED, message);
         }
-		
+		/*
 		// Disabling VTDB for deleted character
 		GameVar@ var = GetLocalVar(LVAR_online_stats, cr.Id);
 		var=0;
 		OnlineStats_TrySave(cr);
+		*/
     }
 }
 
