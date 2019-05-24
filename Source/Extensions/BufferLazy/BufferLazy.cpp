@@ -117,6 +117,7 @@ size_t P::BufferLazy::GetFunctionAddress(const std::string & name)
 	GET_ADDRESS(Global_IsLocalScript);
 
 	#if defined(FOCLASSIC_CLIENT)
+	GET_ADDRESS(Global_RunLocalScript);
 	#elif defined(FOCLASSIC_SERVER)
 	GET_ADDRESS(Critter_RunLocalScript);
 	#endif

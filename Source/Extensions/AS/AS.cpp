@@ -11,6 +11,7 @@
 
 #include <Log.h>
 #include <Script.h>
+#include <ScriptBind.h>
 
 #include "AS.h"
 
@@ -404,7 +405,7 @@ uint Global_GetEnumValueCount( ScriptString& enumName )
 void RegisterAngelScriptExtensions(asIScriptEngine* engine)
 {
 	const char* fail = "Failed to register";
-
+	
 	if(engine->RegisterGlobalFunction("uint GetCallstack(string@[]@+ modules, string@[]@+ names, uint[]@+ lines, uint[]@+ columns)", asFUNCTION(Global_GetCallstack), asCALL_CDECL) < 0)
 		WriteLog("%s GetCallstack()\n", fail);
 	if(engine->RegisterGlobalFunction("bool GetCurrentModule(string& moduleName)", asFUNCTION(Global_GetCurrentModule), asCALL_CDECL) < 0)
@@ -456,7 +457,7 @@ P::AS::AS() : Extension()
 
 void P::AS::Event(const uint& id)
 {
-	if (id == ExtensionEvent::SCRIPT_LOAD_MODULES_START)
+	if (id == ExtensionEvent::SCRIPT_LOAD_CLIENT_MODULES_START || id == ExtensionEvent::SCRIPT_LOAD_MAPPER_MODULES_START || id == ExtensionEvent::SCRIPT_LOAD_SERVER_MODULES_START)
 	{
 		RegisterAngelScriptExtensions(Script::GetEngine());
 	}

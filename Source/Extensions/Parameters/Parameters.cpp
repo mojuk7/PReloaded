@@ -16,6 +16,7 @@
 #include <CritterCl.h>
 #endif
  
+#include <App.h>
 #include <GameOptions.h>
 #include <Item.h>
 #include <Log.h>
@@ -893,7 +894,8 @@ void P::Parameters::Event( const uint& id )
 	if (compiler) return;
 	*/
 
-	if (id == ExtensionEvent::SCRIPT_LOAD_MODULES_START)
+	if ((App.Type == APP_TYPE_CLIENT && id == ExtensionEvent::SCRIPT_LOAD_CLIENT_MODULES_START) ||
+		(App.Type == APP_TYPE_SERVER && id == ExtensionEvent::SCRIPT_LOAD_SERVER_MODULES_START) )
 	{
 		// Register callbacks
 		//GameOpt.GetUseApCost = &GetUseApCost;
@@ -947,6 +949,34 @@ size_t P::Parameters::GetFunctionAddress(const string& name)
 	GET_ADDRESS(Item_Weapon_IsGunAttack);
 	GET_ADDRESS(Item_Weapon_IsRangedAttack);
 	GET_ADDRESS(Item_Weapon_SetMode);
+
+	GET_ADDRESS(getParam_Strength);
+	GET_ADDRESS(getParam_Perception);
+	GET_ADDRESS(getParam_Endurance);
+	GET_ADDRESS(getParam_Charisma);
+	GET_ADDRESS(getParam_Intellegence);
+	GET_ADDRESS(getParam_Agility);
+	GET_ADDRESS(getParam_Luck);
+	GET_ADDRESS(getParam_Hp);
+	GET_ADDRESS(getParam_MaxLife);
+	GET_ADDRESS(getParam_Ap);
+	GET_ADDRESS(getParam_MaxAp);
+	GET_ADDRESS(getParam_MoveAp);
+	GET_ADDRESS(getParam_MaxMoveAp);
+	GET_ADDRESS(getParam_MaxWeight);
+	GET_ADDRESS(getParam_MeleeDmg);
+	GET_ADDRESS(getParam_Sequence);
+	GET_ADDRESS(getParam_HealingRate);
+	GET_ADDRESS(getParam_CriticalChance);
+	GET_ADDRESS(getParam_MaxCritical);
+	GET_ADDRESS(getParam_Ac);
+	GET_ADDRESS(getParam_RadiationResist);
+	GET_ADDRESS(getParam_PoisonResist);
+	GET_ADDRESS(getParam_DamageResistance);
+	GET_ADDRESS(getParam_DamageThreshold);
+	GET_ADDRESS(getParam_Timeout);
+
+	GET_ADDRESS(getParam_Reputation);
 
 	return 0;
 }

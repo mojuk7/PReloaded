@@ -43,7 +43,7 @@ void InitExtensionsClient()
 {
 	WriteLog("Initializing extensions\n");
 
-	Extension::Map["buffer_llazy"] = new P::BufferLazy();
+	Extension::Map["buffer_lazy"] = new P::BufferLazy();
 	Extension::Map["client_parameters"] = new P::Parameters();
 
 	InitExtensionsGeneric();
@@ -79,6 +79,10 @@ void FinishExtensionsMapper()
 
 #elif defined(FOCLASSIC_SERVER)
 
+void InitExtensionsDummy()
+{
+}
+
 void InitExtensionsServer()
 {
 	WriteLog("Initializing extensions\n");
@@ -89,6 +93,7 @@ void InitExtensionsServer()
 	Extension::Map["utils"] = new P::Utils();
 
 	InitExtensionsGeneric();
+	InitExtensionsDummy();
 	Extension::RunEventDebug = true;
 }
 

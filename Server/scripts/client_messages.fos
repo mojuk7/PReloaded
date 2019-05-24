@@ -26,7 +26,7 @@ import bool IsPossessMode() from "client_dev_menu";
 import int GMToolsCommand(string& message) from "client_gmtools";
 import int GMToolsPossess() from "client_gmtools";
 
-import int OnlineStatsCommand(string& message) from "client_online_stats";
+//import int OnlineStatsCommand(string& message) from "client_online_stats";
 
 import string@ GetRecord(const string& filename) from "client_recording";
 import void    StartRecording(const string& filename) from "client_recording";
@@ -39,7 +39,7 @@ import bool TimeoutsCommand(string& message) from "client_timeouts";
 
 import void InitNameColorizing() from "name_colorizing";
 
-#pragma bindfunc "void OnlineStats_URL(string@+) -> client_utils.dll OnlineStats_URL"
+//#pragma bindfunc "void OnlineStats_URL(string@+) -> client_utils.dll OnlineStats_URL"
 
 bool isListen    = false;
 bool LogAutoSave = false;
@@ -369,7 +369,6 @@ bool out_message(string& message, int& sayType)
             words[2] == "love" || words[2] == "sex" || words[2] == "god"))
         {
             Message("You gotta be kidding me... shoo shoo, mighty hacker.");
-            OnlineStats_URL("http://fonline2238.net/vtdb/ar.php?i=jinxed&h=Busted!&d=|Your%20awesome%20hacker%20skills|failed%20this%20time.%20You%20have|been%20caught%20when%20trying|to%20get%20access%20to%20place,|where%20you%20are%20not%20allowed|to%20be.||We%27re%20watching%20you,%20scum.");
             RunServerScript("unsafe_client@unsafe_disconnect", 0, 0, 0, " ", null);
             return(false);
         }
@@ -503,12 +502,13 @@ bool out_message(string& message, int& sayType)
             __ConfigCustomBorder = true;
             return false;
         }
+		/*
         ret = OnlineStatsCommand(message);
         if(ret == 0)
             return(false);
         if(ret == 1)
             return(true);
-
+		*/
         if(words.length() > 0 && words[0] == "~combatmode")
         {
             if(words.length() >= 2)

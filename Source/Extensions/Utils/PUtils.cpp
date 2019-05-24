@@ -192,6 +192,8 @@ size_t P::Utils::GetFunctionAddress(const string& name)
 	GET_ADDRESS(Critter_GetLexems);
 	GET_ADDRESS(Item_GetLexems);
 
+	GET_ADDRESS(_AllowParameterIfFieldMedic);
+
 	return 0;
 }
 

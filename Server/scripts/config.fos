@@ -190,44 +190,44 @@ void InitializeGame()                  // Export
     # endif                        // __CLIENT
 
     # ifndef __CLIENT
-    string dllName = "parameters.dll@";
+    string extName = "parameters.extension@";
     # endif
     # ifdef __CLIENT
-    string dllName = "client_parameters.dll@";
+    string extName = "client_parameters.extension@";
     # endif
 	string fosName = "parameters@";
 
-    SetParameterGetBehaviour(ST_STRENGTH, dllName + "getParam_Strength");
-    SetParameterGetBehaviour(ST_PERCEPTION, dllName + "getParam_Perception");
-    SetParameterGetBehaviour(ST_ENDURANCE, dllName + "getParam_Endurance");
-    SetParameterGetBehaviour(ST_CHARISMA, dllName + "getParam_Charisma");
-    SetParameterGetBehaviour(ST_INTELLECT, dllName + "getParam_Intellegence");
-    SetParameterGetBehaviour(ST_AGILITY, dllName + "getParam_Agility");
-    SetParameterGetBehaviour(ST_LUCK, dllName + "getParam_Luck");
-    SetParameterGetBehaviour(ST_CURRENT_HP, dllName + "getParam_Hp");
-    SetParameterGetBehaviour(ST_MAX_LIFE, dllName + "getParam_MaxLife");
-    SetParameterGetBehaviour(ST_ACTION_POINTS, dllName + "getParam_MaxAp");
-    SetParameterGetBehaviour(ST_CURRENT_AP, dllName + "getParam_Ap");
-    SetParameterGetBehaviour(ST_MAX_MOVE_AP, dllName + "getParam_MaxMoveAp");
-    SetParameterGetBehaviour(ST_MOVE_AP, dllName + "getParam_MoveAp");
-    SetParameterGetBehaviour(ST_CARRY_WEIGHT, dllName + "getParam_MaxWeight");
-    SetParameterGetBehaviour(ST_MELEE_DAMAGE, dllName + "getParam_MeleeDmg");
-    SetParameterGetBehaviour(ST_SEQUENCE, dllName + "getParam_Sequence");
-    SetParameterGetBehaviour(ST_HEALING_RATE, dllName + "getParam_HealingRate");
-    SetParameterGetBehaviour(ST_CRITICAL_CHANCE, dllName + "getParam_CriticalChance");
-    SetParameterGetBehaviour(ST_MAX_CRITICAL, dllName + "getParam_MaxCritical");
-    SetParameterGetBehaviour(ST_ARMOR_CLASS, dllName + "getParam_Ac");
-    SetParameterGetBehaviour(ST_RADIATION_RESISTANCE, dllName + "getParam_RadiationResist");
-    SetParameterGetBehaviour(ST_POISON_RESISTANCE, dllName + "getParam_PoisonResist");
+    SetParameterGetBehaviour(ST_STRENGTH, extName + "getParam_Strength");
+    SetParameterGetBehaviour(ST_PERCEPTION, extName + "getParam_Perception");
+    SetParameterGetBehaviour(ST_ENDURANCE, extName + "getParam_Endurance");
+    SetParameterGetBehaviour(ST_CHARISMA, extName + "getParam_Charisma");
+    SetParameterGetBehaviour(ST_INTELLECT, extName + "getParam_Intellegence");
+    SetParameterGetBehaviour(ST_AGILITY, extName + "getParam_Agility");
+    SetParameterGetBehaviour(ST_LUCK, extName + "getParam_Luck");
+    SetParameterGetBehaviour(ST_CURRENT_HP, extName + "getParam_Hp");
+    SetParameterGetBehaviour(ST_MAX_LIFE, extName + "getParam_MaxLife");
+    SetParameterGetBehaviour(ST_ACTION_POINTS, extName + "getParam_MaxAp");
+    SetParameterGetBehaviour(ST_CURRENT_AP, extName + "getParam_Ap");
+    SetParameterGetBehaviour(ST_MAX_MOVE_AP, extName + "getParam_MaxMoveAp");
+    SetParameterGetBehaviour(ST_MOVE_AP, extName + "getParam_MoveAp");
+    SetParameterGetBehaviour(ST_CARRY_WEIGHT, extName + "getParam_MaxWeight");
+    SetParameterGetBehaviour(ST_MELEE_DAMAGE, extName + "getParam_MeleeDmg");
+    SetParameterGetBehaviour(ST_SEQUENCE, extName + "getParam_Sequence");
+    SetParameterGetBehaviour(ST_HEALING_RATE, extName + "getParam_HealingRate");
+    SetParameterGetBehaviour(ST_CRITICAL_CHANCE, extName + "getParam_CriticalChance");
+    SetParameterGetBehaviour(ST_MAX_CRITICAL, extName + "getParam_MaxCritical");
+    SetParameterGetBehaviour(ST_ARMOR_CLASS, extName + "getParam_Ac");
+    SetParameterGetBehaviour(ST_RADIATION_RESISTANCE, extName + "getParam_RadiationResist");
+    SetParameterGetBehaviour(ST_POISON_RESISTANCE, extName + "getParam_PoisonResist");
     for(uint i = ST_NORMAL_RESIST; i <= ST_EXPLODE_RESIST; i++)
-        SetParameterGetBehaviour(i, dllName + "getParam_DamageResistance");                                                   // changed roundings
+        SetParameterGetBehaviour(i, extName + "getParam_DamageResistance");                                                   // changed roundings
     for(uint i = ST_NORMAL_ABSORB; i <= ST_EXPLODE_ABSORB; i++)
-        SetParameterGetBehaviour(i, dllName + "getParam_DamageThreshold");                                                    // changed roundings
+        SetParameterGetBehaviour(i, extName + "getParam_DamageThreshold");                                                    // changed roundings
     for(uint i = TIMEOUT_BEGIN; i <= TIMEOUT_END; i++)
-        SetParameterGetBehaviour(i, dllName + "getParam_Timeout");
+        SetParameterGetBehaviour(i, extName + "getParam_Timeout");
     for(uint i = REPUTATION_BEGIN; i <= REPUTATION_END; i++)
-        SetParameterGetBehaviour(i, dllName + "getParam_Reputation");
-    // for(uint i=REPUTATION_BEGIN;i<=REPUTATION_END;i++) SetParameterChangeBehaviour(i,dllName+"changedParam_Reputation");
+        SetParameterGetBehaviour(i, extName + "getParam_Reputation");
+    // for(uint i=REPUTATION_BEGIN;i<=REPUTATION_END;i++) SetParameterChangeBehaviour(i,extName+"changedParam_Reputation");
 
     # ifndef __CLIENT
 	SetParameterChangeBehaviour(ST_BASE_CRTYPE, "critter_skin@changedParam_SkinHooks" );// skins management: effects

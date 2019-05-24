@@ -237,6 +237,8 @@ void init()
 // Call on start server.
 bool start()
 {
+    const string extUtils = "utils.extension@";
+
     // Send info about others critters
     // Remember:
     // - all this info can be hacked in client;
@@ -258,20 +260,20 @@ bool start()
     // Agility
     SetSendParameter(ST_AGILITY, true);
     // Hit points, uses Strenght and Endurance
-    SetSendParameter(ST_MAX_LIFE, true); //SetSendParameter(ST_MAX_LIFE, true, "Utils.dll@_AllowParameterIfAwareness");
-    SetSendParameter(ST_MAX_LIFE_EXT, true); //SetSendParameter(ST_MAX_LIFE_EXT, true, "Utils.dll@_AllowParameterIfAwareness");
-    SetSendParameter(ST_CURRENT_HP, true); //SetSendParameter(ST_CURRENT_HP, true, "Utils.dll@_AllowParameterIfAwareness");
+    SetSendParameter(ST_MAX_LIFE, true); //SetSendParameter(ST_MAX_LIFE, true, extUtils + "_AllowParameterIfAwareness");
+    SetSendParameter(ST_MAX_LIFE_EXT, true); //SetSendParameter(ST_MAX_LIFE_EXT, true, extUtils + "_AllowParameterIfAwareness");
+    SetSendParameter(ST_CURRENT_HP, true); //SetSendParameter(ST_CURRENT_HP, true, extUtils + "_AllowParameterIfAwareness");
     SetSendParameter(ST_HEALTH_LEVEL, true);
     //SetSendParameter(ST_TURN_BASED_AC, true);
     // Strenght, uses battle timeout
-    SetSendParameter(ST_STRENGTH, true); //SetSendParameter(ST_STRENGTH, true, "Utils.dll@_AllowParameterIfAwareness");
+    SetSendParameter(ST_STRENGTH, true); //SetSendParameter(ST_STRENGTH, true, extUtils + "_AllowParameterIfAwareness");
     // Battle timeout
     SetSendParameter(TO_BATTLE, true);
     // FA/Doc timeouts for Field Medic awareness info
-    SetSendParameter(TO_SK_FIRST_AID, true, "Utils.dll@_AllowParameterIfFieldMedic");
-    SetSendParameter(TO_SK_DOCTOR, true, "Utils.dll@_AllowParameterIfFieldMedic");
+    SetSendParameter(TO_SK_FIRST_AID, true, extUtils + "_AllowParameterIfFieldMedic");
+    SetSendParameter(TO_SK_DOCTOR, true, extUtils + "_AllowParameterIfFieldMedic");
     // Endurance
-    SetSendParameter(ST_ENDURANCE, true); //SetSendParameter(ST_ENDURANCE, true, "Utils.dll@_AllowParameterIfAwareness");
+    SetSendParameter(ST_ENDURANCE, true); //SetSendParameter(ST_ENDURANCE, true, extUtils + "_AllowParameterIfAwareness");
     // Injures
     SetSendParameter(DAMAGE_EYE, true);
     SetSendParameter(DAMAGE_RIGHT_ARM, true);
@@ -279,9 +281,9 @@ bool start()
     SetSendParameter(DAMAGE_RIGHT_LEG, true);
     SetSendParameter(DAMAGE_LEFT_LEG, true);
     // Item slots, passed with -
-    SetSendParameter(-SLOT_HAND1, true); //SetSendParameter(-SLOT_HAND1, true, "Utils.dll@_AllowSlotHand1");
+    SetSendParameter(-SLOT_HAND1, true); //SetSendParameter(-SLOT_HAND1, true, extUtils + "_AllowSlotHand1");
     SetSendParameter(-SLOT_HAND2, false);
-    SetSendParameter(-SLOT_ARMOR, true); //SetSendParameter(-SLOT_ARMOR, true, "Utils.dll@_AllowSlotHand1");
+    SetSendParameter(-SLOT_ARMOR, true); //SetSendParameter(-SLOT_ARMOR, true, extUtils + "AllowSlotHand1");
     SetSendParameter(-SLOT_HEAD, true);
 
     // Some flags for correct client working
@@ -291,7 +293,7 @@ bool start()
     SetSendParameter(MODE_NO_STEAL, true);
     SetSendParameter(MODE_NO_FLATTEN, true);
     SetSendParameter(MODE_NO_TALK, true);
-    SetSendParameter(ST_BODY_TYPE, true); //SetSendParameter(ST_BODY_TYPE, true, "Utils.dll@_AllowParameterIfAwareness");
+    SetSendParameter(ST_BODY_TYPE, true); //SetSendParameter(ST_BODY_TYPE, true, extUtils + "_AllowParameterIfAwareness");
 
     // Npc talk distance
     SetSendParameter(ST_TALK_DISTANCE, true);

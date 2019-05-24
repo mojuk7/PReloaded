@@ -52,7 +52,7 @@ import void InitTownDisplay() from "client_interface";
 
 import bool InitBinds() from "client_keybinds";
 
-import void InitOnlineStats() from "client_online_stats";
+//import void InitOnlineStats() from "client_online_stats";
 import void InitContainerAddons() from "client_container_addons";
 import int GetPickupFilterOwn() from "client_container_addons";
 import int GetPickupFilterOpp() from "client_container_addons";
@@ -78,7 +78,7 @@ import IClientAccessLevelOpt@ InitAccessControl() from "client_access";
 
 import void InitSmartCursor() from "client/smart_cursor";
 
-#pragma bindfunc "void OpenURL(string@+) -> client_utils.dll OnlineStats_URL"
+//#pragma bindfunc "void OpenURL(string@+) -> client_utils.dll OnlineStats_URL"
 
 array<int> trader_levels;               // Cached trader levels from server
 // int[] item_prices_base; // Cached item prices from server
@@ -123,7 +123,7 @@ bool start()
     // delete me!
     SetParameterGetBehaviour(ST_BONUS_LOOK, "client_main@getParam_BonusLook");
     AppendIfaceIni("faction.ini");
-    AppendIfaceIni("online_stats.ini");
+    //AppendIfaceIni("online_stats.ini");
 
     GUI_Init();
     InitConfig();
@@ -144,7 +144,7 @@ bool start()
     InitChosenTabs();
     InitBarterFilters();
     InitFixboyAddons();
-    InitOnlineStats();
+    //InitOnlineStats();
     InitContainerAddons();
     InitPerks();
 
@@ -1008,7 +1008,7 @@ bool IsGMTEnabled()
 {
     return(isGMT);
 }
-
+/*
 void _OpenURL(int, int, int, string@ url, array<int>@)
 {
     if(!valid(url) || url.length() == 0)
@@ -1039,3 +1039,4 @@ void _OpenURL(int, int, int, string@ url, array<int>@)
     Message("Opening URL: " + url);
     OpenURL(url);
 }
+*/
