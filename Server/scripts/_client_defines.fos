@@ -59,7 +59,6 @@
 #define CLIENT_SCREEN_ELEVATOR_SCRIPT      (45) // scripted version of elevator screen
 #define CLIENT_SCREEN_RADIO                (46) // radio.fos
 #define CLIENT_SCREEN_GMTOOLSMENU          (47)
-#define CLIENT_SCREEN_ONLINE_STATS         (48) // client_online_stats.fos
 #define CLIENT_SCREEN_REVIEW               (49) // client_dialog.fos
 #define CLIENT_SCREEN_PICTURE              (50) // client_screen_picture.fos
 #define CLIENT_SCREEN_TAG			       (51)

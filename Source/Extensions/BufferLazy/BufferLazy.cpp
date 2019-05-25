@@ -112,7 +112,7 @@ static void Critter_RunLocalScript( Critter& cr, const ScriptString& scriptfunc,
 P::BufferLazy::BufferLazy() : Extension()
 {}
 
-size_t P::BufferLazy::GetFunctionAddress(const std::string & name)
+size_t P::BufferLazy::GetFunctionAddress(const std::string& name)
 {
 	GET_ADDRESS(Global_IsLocalScript);
 

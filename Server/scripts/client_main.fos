@@ -52,7 +52,6 @@ import void InitTownDisplay() from "client_interface";
 
 import bool InitBinds() from "client_keybinds";
 
-//import void InitOnlineStats() from "client_online_stats";
 import void InitContainerAddons() from "client_container_addons";
 import int GetPickupFilterOwn() from "client_container_addons";
 import int GetPickupFilterOpp() from "client_container_addons";
@@ -77,8 +76,6 @@ import bool CritterGenerateCheck(array<int>& data) from "parameters";
 import IClientAccessLevelOpt@ InitAccessControl() from "client_access";
 
 import void InitSmartCursor() from "client/smart_cursor";
-
-//#pragma bindfunc "void OpenURL(string@+) -> client_utils.dll OnlineStats_URL"
 
 array<int> trader_levels;               // Cached trader levels from server
 // int[] item_prices_base; // Cached item prices from server
@@ -123,7 +120,6 @@ bool start()
     // delete me!
     SetParameterGetBehaviour(ST_BONUS_LOOK, "client_main@getParam_BonusLook");
     AppendIfaceIni("faction.ini");
-    //AppendIfaceIni("online_stats.ini");
 
     GUI_Init();
     InitConfig();
@@ -144,7 +140,6 @@ bool start()
     InitChosenTabs();
     InitBarterFilters();
     InitFixboyAddons();
-    //InitOnlineStats();
     InitContainerAddons();
     InitPerks();
 
@@ -1008,35 +1003,3 @@ bool IsGMTEnabled()
 {
     return(isGMT);
 }
-/*
-void _OpenURL(int, int, int, string@ url, array<int>@)
-{
-    if(!valid(url) || url.length() == 0)
-        return;
-
-    array<string> allowed;
-    allowed.insertLast("http://fonline2238.net");
-    allowed.insertLast("http://dev.fonline2238.net");
-    allowed.insertLast("http://donate.fonline2238.net");
-
-    bool can = false;
-    for(uint a = 0, aLen = allowed.length(); a < aLen; a++)
-    {
-        if(url.length() < allowed.length())
-            return;
-
-        if(substring(url, 0, allowed[a].length()) == allowed[a])
-        {
-            can = true;
-            break;
-        }
-    }
-
-    if(!can)
-        return;
-
-    Log("Opening URL: " + url);
-    Message("Opening URL: " + url);
-    OpenURL(url);
-}
-*/
