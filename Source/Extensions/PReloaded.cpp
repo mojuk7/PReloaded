@@ -6,7 +6,9 @@
 #include "AS/AS.h"
 #include "Parameters/Parameters.h"
 
-#if defined(FOCLASSIC_SERVER)
+#if defined(FOCLASSIC_MAPPER)
+#include "MapperUtils/MapperUtils.h"
+#elif defined(FOCLASSIC_SERVER)
 #include "CheckLook/CheckLook.h"
 #include "Utils/PUtils.h"
 #endif
@@ -66,6 +68,8 @@ void InitExtensionsMapper()
 {
 	WriteLog("Initializing extensions\n");
 
+	Extension::Map["mapper_utils"] = new P::MapperUtils();
+
 	InitExtensionsGeneric();
 	Extension::RunEventDebug = true;
 }
@@ -74,14 +78,12 @@ void FinishExtensionsMapper()
 {
 	WriteLog("Finishing extensions\n");
 
+	delete (P::MapperUtils*)Extension::Map["mapper_utils"];
+
 	FinishExtensionsGeneric();
 }
 
 #elif defined(FOCLASSIC_SERVER)
-
-void InitExtensionsDummy()
-{
-}
 
 void InitExtensionsServer()
 {
@@ -93,7 +95,6 @@ void InitExtensionsServer()
 	Extension::Map["utils"] = new P::Utils();
 
 	InitExtensionsGeneric();
-	InitExtensionsDummy();
 	Extension::RunEventDebug = true;
 }
 

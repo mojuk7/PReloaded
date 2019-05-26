@@ -11,9 +11,9 @@
 #include "mapper_gui.fos"
 #include "mapper_plugin_h.fos"
 
-#pragma bindfunc "int MapperObject::CritterCl_GetParam(uint16) -> MapperUtils.dll MapObject_CritterCl_GetParam"
-#pragma bindfunc "void MapperObject::CritterCl_SetBaseType(uint) -> MapperUtils.dll MapObject_CritterCl_SetBaseType"
-#pragma bindfunc "uint MapperObject::CritterCl_GetBaseType() -> MapperUtils.dll MapObject_CritterCl_SetBaseType"
+#pragma bindfunc "int MapperObject::CritterCl_GetParam(uint16) -> mapper_utils MapObject_CritterCl_GetParam"
+#pragma bindfunc "void MapperObject::CritterCl_SetBaseType(uint) -> mapper_utils MapObject_CritterCl_SetBaseType"
+#pragma bindfunc "uint MapperObject::CritterCl_GetBaseType() -> mapper_utils MapObject_CritterCl_GetBaseType"
 
 array<uint> UnarmoredTypesMale;
 array<uint> UnarmoredTypesFemale;

@@ -67,6 +67,18 @@ target_sources( CheckLook
 FOClassicExtension( SERVER CheckLook )
 
 ##
+## MapperUtils
+##
+
+add_library( MapperUtils STATIC )
+target_sources( MapperUtils
+	PRIVATE
+		MapperUtils/MapperUtils.cpp
+		MapperUtils/MapperUtils.h
+)
+FOClassicExtension( MAPPER MapperUtils )
+
+##
 ## Parameters
 ##
 
