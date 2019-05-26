@@ -1,0 +1,13 @@
+#ifndef __EXTENSIONS__AS__
+#define __EXTENSIONS__AS__
+
+#ifdef __ASCOMPILER
+
+#message "Extension[AS] dummy registration"
+#pragma bindfunc "uint GetCallstack(string@[]@+ modules, string@[]@+ names, uint[]@+ lines, uint[]@+ columns) -> DUMMY FUNCTION"
+#pragma bindfunc "uint GetEnum(string& enumName, string@[]@+ names, int[]@+ values) -> DUMMY FUNCTION"
+#pragma bindfunc "bool EnumContains(string& enumName, int value) -> DUMMY FUNCTION"
+
+#endif // __ASCOMPILER
+
+#endif // __EXTENSIONS__AS__ //

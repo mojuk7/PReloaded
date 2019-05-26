@@ -22,6 +22,7 @@
 #ifdef RELOADED
  #include "debug_h.fos"
  #include "utils_h.fos"
+ #include "extensions/as.fos" // for ASCompiler
 #endif
 
 #include "buffer_h.fos"

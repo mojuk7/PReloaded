@@ -17,6 +17,8 @@
 # include "utils_h.fos"
 #endif
 
+#include "extensions/as.fos" // for ASCompiler
+
 import int stringReplaceText(string& s, string@ f, string@ t) from "config_file";
 
 #ifdef __CLIENT
